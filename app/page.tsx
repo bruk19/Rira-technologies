@@ -75,11 +75,11 @@ export default function HomePage() {
               </div>
             </ScaleOnScroll>
             <ScrollReveal delay={0.2}>
-              <div className="bg-gray-900 rounded-lg border border-gray-800">
+              <div className="rounded-lg">
                 <img
-                  src="/nn-unscreen.gif?height=700&width=500"
+                  src="/nn-unscreen.gif"
                   alt="Blockchain Network Visualization"
-                  className="w-full h-[510px] object-cover rounded-lg"
+                  className="w-full md:h-[450px] h-[200px] object-cover rounded-lg"
                 />
               </div>
             </ScrollReveal>

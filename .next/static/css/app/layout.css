@@ -1026,6 +1026,12 @@ video {
 .h-\[300px\] {
   height: 300px;
 }
+.h-\[490px\] {
+  height: 490px;
+}
+.h-\[200px\] {
+  height: 200px;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -3997,6 +4003,10 @@ html {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:h-\[450px\] {
+    height: 450px;
   }
 
   .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
