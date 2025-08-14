@@ -100,21 +100,21 @@ export default function UniqueServiceCards() {
               <div
                 className={`absolute inset-0 ${service.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
               />
-              <CardContent className="p-8 relative z-10 h-full flex flex-col">
+              <CardContent className="py-8 md:px-8 px-4 relative z-10 h-full flex flex-col">
                 <div className="flex items-center gap-4 mb-6">
                   <div
-                    className={`w-16 h-16 rounded-xl bg-gradient-to-r ${service.gradient} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}
+                    className={`md:w-16 md:h-16 w-12 h-12 rounded-xl bg-gradient-to-r ${service.gradient} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}
                   >
                     {service.icon}
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-gray-100 transition-colors">
+                    <h3 className="md:text-2xl text-lg font-bold text-white mb-2 group-hover:text-gray-100 transition-colors">
                       {service.title}
                     </h3>
                     <Sparkles className="w-5 h-5 text-gray-400 group-hover:text-yellow-400 transition-colors" />
                   </div>
                 </div>
-                <p className="text-gray-400 group-hover:text-gray-300 transition-colors text-lg mb-6 flex-grow">
+                <p className="text-gray-400 group-hover:text-gray-300 transition-colors md:text-lg text-sm mb-6 flex-grow">
                   {service.description}
                 </p>
                 <Link href="/contact">
@@ -139,9 +139,9 @@ export default function UniqueServiceCards() {
               <div
                 className={`absolute inset-0 ${service.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
               />
-              <CardContent className="p-6 relative z-10">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-4">
+              <CardContent className="py-6 md:px-6 px-4 relative z-10">
+                <div className="flex md:flex-row flex-col items-center justify-between">
+                  <div className="flex md:flex-row flex-col md:items-center items-start gap-4">
                     <div
                       className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}
                     >
@@ -151,10 +151,10 @@ export default function UniqueServiceCards() {
                       <h3 className="text-xl font-bold text-white mb-1 group-hover:text-gray-100 transition-colors">
                         {service.title}
                       </h3>
-                      <p className="text-gray-400 group-hover:text-gray-300 transition-colors">{service.description}</p>
+                      <p className="text-gray-400 group-hover:text-gray-300 transition-colors md:text-[16px] text-sm">{service.description}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 md:pt-0 pt-8">
                     <Zap className="w-5 h-5 text-gray-400 group-hover:text-yellow-400 transition-colors" />
                     <Link href="/contact">
                       <Button
@@ -189,14 +189,14 @@ export default function UniqueServiceCards() {
               <h3 className="text-lg font-bold text-white mb-3 group-hover:text-gray-100 transition-colors">
                 {service.title}
               </h3>
-              <p className="text-gray-400 group-hover:text-gray-300 transition-colors text-sm flex-grow mb-4">
+              <p className="text-gray-400 group-hover:text-gray-300 transition-colors md:text-[16px] text-sm flex-grow mb-4">
                 {service.description}
               </p>
               <Link href="/contact">
                 <Button
                   size="sm"
                   variant="outline"
-                  className={`border-2 ${service.borderColor.replace("border-", "border-")} text-gray-300 hover:bg-gradient-to-r hover:${service.gradient} hover:text-white hover:border-transparent rounded-full transition-all duration-300 bg-transparent w-full`}
+                  className={`border-2 ${service.borderColor.replace("border-", "border-")} text-gray-300 hover:text-black hover:border-transparent rounded-full transition-all duration-300 bg-transparent w-full`}
                 >
                   Explore
                   <ArrowRight className="ml-2 w-3 h-3" />

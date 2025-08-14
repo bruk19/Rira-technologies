@@ -28,16 +28,11 @@ export default function DynamicHero() {
   }, [services.length])
 
   return (
-    <section className="pt-32 pb-20 px-4 relative z-10">
+    <section className="pt-32 pb-14 px-4 relative z-10">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center">
-          {/* Badge */}
-          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-800 border border-gray-700 mb-8">
-            <span className="text-gray-300 text-sm font-medium">Ethiopia's First Web3 Agency</span>
-          </div>
-
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl font-semibold mb-6 leading-tight text-gray-100">Rira Technologies</h1>
+          <h1 className="text-4xl md:text-6xl pt-4 font-semibold mb-6 leading-tight text-gray-100">Rira Technologies</h1>
 
           {/* Dynamic Service Text */}
           <div className="mb-8">
@@ -58,7 +53,7 @@ export default function DynamicHero() {
           </p>
 
           {/* Description */}
-          <p className="text-lg text-gray-500 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="md:text-lg text-sm text-gray-500 mb-12 max-w-3xl mx-auto leading-relaxed">
             We specialize in blockchain development, decentralized applications, and traditional web solutions including
             management systems, payment platforms, mobile apps, and modern websites.
           </p>

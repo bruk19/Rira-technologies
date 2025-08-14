@@ -32,18 +32,18 @@ export default function HomePage() {
       </section>
 
       {/* Why Blockchain Section with Magnetic Cards */}
-      <section id="why-blockchain" className="py-20 px-4 relative z-10">
+      <section id="why-blockchain" className="md:py-20 py-6 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <ScaleOnScroll>
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-semibold mb-6 text-gray-100">
+            <div className="text-center md:mb-16 mb-8">
+              <h2 className="md:text-4xl text-2xl font-semibold md:mb-6 mb-2 text-gray-100">
                 Why{" "}
                 <MorphingText
                   texts={["Blockchain?", "Web3?", "Decentralization?", "Innovation?"]}
                   className="text-cyan-400"
                 />
               </h2>
-              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+              <p className="md:text-lg text-sm text-gray-400 max-w-2xl mx-auto">
                 Blockchain is revolutionizing trust in the digital world. Here's why it matters:
               </p>
             </div>
@@ -54,18 +54,18 @@ export default function HomePage() {
       </section>
 
       {/* Why Blockchain Matters with Photo */}
-      <section className="py-20 px-4 relative z-10">
+      <section className="md:py-20 py-2 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <ScaleOnScroll>
               <div>
-                <h2 className="text-3xl font-semibold mb-6 text-gray-100">Why Blockchain Matters?</h2>
-                <p className="text-lg text-gray-400 mb-8 leading-relaxed">
+                <h2 className="md:text-3xl text-xl font-semibold mb-6 text-gray-100">Why Blockchain Matters?</h2>
+                <p className="md:text-lg text-sm text-gray-400 mb-8 leading-relaxed">
                   Blockchain technology enhances security and transparency by providing a decentralized,
                   tamper-resistant ledger for transactions. It eliminates intermediaries, reduces costs, and enables
                   traceability, making it easier to verify authenticity.
                 </p>
-                <p className="text-lg text-gray-400 mb-8 leading-relaxed">
+                <p className="md:text-lg text-sm text-gray-400 mb-8 leading-relaxed">
                   Our expertise in blockchain development ensures your projects leverage the full potential of this
                   revolutionary technology, from smart contracts to decentralized applications.
                 </p>
@@ -79,7 +79,7 @@ export default function HomePage() {
                 <img
                   src="/nn-unscreen.gif"
                   alt="Blockchain Network Visualization"
-                  className="w-full md:h-[450px] h-[200px] object-cover rounded-lg"
+                  className="w-full md:h-[400px] h-[300px] object-cover rounded-lg"
                 />
               </div>
             </ScrollReveal>
@@ -101,12 +101,12 @@ export default function HomePage() {
       />
 
       {/* Services We Provide Section */}
-      <section id="services" className="py-20 px-4 relative z-10">
+      <section id="services" className="md:py-20 py-10 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <ScaleOnScroll>
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-semibold mb-6 text-gray-100">Services We Provide</h2>
-              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+              <h2 className="md:text-4xl text-2xl font-semibold mb-6 text-gray-100">Services We Provide</h2>
+              <p className="md:text-lg text-sm text-gray-400 max-w-2xl mx-auto">
                 Comprehensive technology solutions for both Web3 and traditional development
               </p>
             </div>
