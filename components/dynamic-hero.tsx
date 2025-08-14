@@ -28,11 +28,11 @@ export default function DynamicHero() {
   }, [services.length])
 
   return (
-    <section className="pt-32 pb-14 px-4 relative z-10">
-      <div className="container mx-auto max-w-4xl">
+    <section className="pt-32 pb-14 md:px-4 px-2 relative z-10">
+      <div className="container mx-auto md:max-w-4xl w-full">
         <div className="text-center">
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-6xl pt-4 font-semibold mb-6 leading-tight text-gray-100">Rira Technologies</h1>
+          <h1 className="text-4xl md:text-7xl pt-4 font-semibold mb-6 leading-tight text-gray-100">Rira Technologies</h1>
 
           {/* Dynamic Service Text */}
           <div className="mb-8">
@@ -48,7 +48,7 @@ export default function DynamicHero() {
           </div>
 
           {/* Subtitle */}
-          <p className="text-xl md:text-2xl text-gray-400 mb-8 leading-relaxed">
+          <p className="text-lg md:text-2xl text-gray-400 mb-8 leading-relaxed">
             Building the future with Web3 innovation and reliable Web2 solutions
           </p>
 

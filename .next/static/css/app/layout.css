@@ -1020,6 +1020,21 @@ video {
 .h-svh {
   height: 100svh;
 }
+.h-\[150px\] {
+  height: 150px;
+}
+.h-\[400px\] {
+  height: 400px;
+}
+.h-\[100px\] {
+  height: 100px;
+}
+.h-\[500px\] {
+  height: 500px;
+}
+.h-\[450px\] {
+  height: 450px;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -1148,6 +1163,9 @@ video {
 }
 .w-px {
   width: 1px;
+}
+.w-\[110\%\] {
+  width: 110%;
 }
 .min-w-0 {
   min-width: 0px;
@@ -2133,6 +2151,9 @@ video {
 .p-\[1px\] {
   padding: 1px;
 }
+.p-10 {
+  padding: 2.5rem;
+}
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -2224,6 +2245,10 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+.py-14 {
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
 }
 .pb-16 {
   padding-bottom: 4rem;
@@ -2358,6 +2383,12 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-\[15px\] {
+  font-size: 15px;
+}
+.text-\[17px\] {
+  font-size: 17px;
 }
 .font-black {
   font-weight: 900;
@@ -3979,6 +4010,14 @@ html {
     margin-bottom: 4rem;
   }
 
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .md\:mt-6 {
+    margin-top: 1.5rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -4003,6 +4042,18 @@ html {
     height: 4rem;
   }
 
+  .md\:h-\[500px\] {
+    height: 500px;
+  }
+
+  .md\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .md\:h-\[700px\] {
+    height: 700px;
+  }
+
   .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
     width: var(--radix-navigation-menu-viewport-width);
   }
@@ -4015,8 +4066,16 @@ html {
     width: 4rem;
   }
 
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:max-w-\[420px\] {
     max-width: 420px;
+  }
+
+  .md\:max-w-4xl {
+    max-width: 56rem;
   }
 
   .md\:grid-cols-1 {
@@ -4043,6 +4102,32 @@ html {
     align-items: center;
   }
 
+  .md\:gap-12 {
+    gap: 3rem;
+  }
+
+  .md\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:overflow-hidden {
+    overflow: hidden;
+  }
+
+  .md\:p-14 {
+    padding: 3.5rem;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
   .md\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -4056,6 +4141,16 @@ html {
   .md\:px-6 {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+  }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .md\:pt-0 {
@@ -4127,6 +4222,10 @@ html {
 
   .md\:text-\[14px\] {
     font-size: 14px;
+  }
+
+  .md\:text-\[18px\] {
+    font-size: 18px;
   }
 
   .md\:opacity-0 {
