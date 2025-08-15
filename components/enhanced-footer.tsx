@@ -17,7 +17,7 @@ export default function EnhancedFooter() {
   ]
 
   return (
-    <footer className="bg-black border-t border-gray-800 relative overflow-hidden">
+    <footer className="bg-black border-t border-gray-600 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -33,9 +33,9 @@ export default function EnhancedFooter() {
       </div>
 
       {/* Main Footer Content */}
-      <section className="py-16 px-4 relative z-10">
+      <section className="md:py-16 py-10 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 md:gap-8 gap-6">
             {/* Company Info */}
             <div className="lg:col-span-2">
               <ScrollReveal>
@@ -45,7 +45,7 @@ export default function EnhancedFooter() {
                   </div>
                   <span className="text-2xl font-bold text-white">Rira Technologies</span>
                 </div>
-                <p className="text-gray-400 mb-6 max-w-md leading-relaxed">
+                <p className="text-gray-400 mb-6 max-w-md leading-relaxed md:text-[16px] text-sm">
                   Ethiopia's pioneering Web3 agency specializing in blockchain development, decentralized applications,
                   and innovative digital solutions that bridge traditional business with the decentralized future.
                 </p>
@@ -116,13 +116,13 @@ export default function EnhancedFooter() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="mt-16 pt-8 border-t border-gray-800">
+          <div className="mt-16 pt-8 border-t border-gray-600">
             <ScrollReveal delay={0.4}>
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <p className="text-gray-400 text-sm mb-4 md:mb-0">
                   © 2025 Rira Technologies. All rights reserved. 
                 </p>
-                <div className="flex space-x-6">
+                <div className="flex md:space-x-6 space-x-3">
                   <Link href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors duration-300">
                     Privacy Policy
                   </Link>

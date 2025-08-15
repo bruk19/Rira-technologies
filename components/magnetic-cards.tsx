@@ -19,25 +19,25 @@ export default function MagneticCards() {
 
   const cards = [
     {
-      icon: <Globe className="w-8 h-8" />,
+      icon: <Globe className="md:w-8 md:h-8 w-5 h-5" />,
       title: "Decentralization",
       description: "No single entity controls the system",
       gradient: "from-blue-500 to-cyan-500",
     },
     {
-      icon: <Shield className="w-8 h-8" />,
+      icon: <Shield className="md:w-8 md:h-8 w-5 h-5" />,
       title: "Security",
       description: "Encrypted and tamper-proof data",
       gradient: "from-green-500 to-emerald-500",
     },
     {
-      icon: <Zap className="w-8 h-8" />,
+      icon: <Zap className="md:w-8 md:h-8 w-5 h-5" />,
       title: "Transparency",
       description: "Public accountable transactions",
       gradient: "from-yellow-500 to-orange-500",
     },
     {
-      icon: <Cpu className="w-8 h-8" />,
+      icon: <Cpu className="md:w-8 md:h-8 w-5 h-5" />,
       title: "Efficiency",
       description: "Faster, cost-effective processes",
       gradient: "from-purple-500 to-pink-500",
@@ -90,7 +90,7 @@ function MagneticCard({
         animationDelay: `${index * 0.1}s`,
       }}
     >
-      <CardContent className="p-8 text-center h-full flex flex-col relative overflow-hidden">
+      <CardContent className="md:p-8 p-4 text-center h-full flex flex-col relative overflow-hidden">
         {/* Animated background */}
         <div
           className={`absolute inset-0 bg-gradient-to-r ${card.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
