@@ -31,7 +31,7 @@ export default function PortfolioPage() {
 			</section>
 
 			{/* Portfolio Stats */}
-			<section className="py-12 px-4 relative z-10">
+			<section className="md:py-12 py-6 px-4 relative z-10">
 				<div className="container mx-auto max-w-6xl">
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						{[
@@ -42,9 +42,9 @@ export default function PortfolioPage() {
 						].map((stat, index) => (
 							<ScrollReveal key={index} delay={index * 0.1}>
 								<Card className="bg-gray-900/50 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:scale-105">
-									<CardContent className="p-6 text-center">
-										<div className="text-3xl mb-2">{stat.icon}</div>
-										<div className="text-2xl font-bold text-white mb-1">{stat.number}</div>
+									<CardContent className="py-6 md:px-6 px-2 text-center">
+										<div className="md:text-3xl text-xl mb-2">{stat.icon}</div>
+										<div className="md:text-2xl text-xl font-bold text-white mb-1">{stat.number}</div>
 										<div className="text-gray-400 text-sm">{stat.label}</div>
 									</CardContent>
 								</Card>
@@ -59,8 +59,8 @@ export default function PortfolioPage() {
 				<div className="container mx-auto max-w-6xl">
 					<ScaleOnScroll>
 						<div className="text-center mb-16">
-							<div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-green-500/20 to-emerald-500/20 border border-green-500/30 mb-6">
-								<span className="md-text-lg text-sm text-green-400 font-semibold">Featured Project</span>
+							<div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-500/20 border border-blue-500/30 mb-6">
+								<span className="md-text-lg text-sm text-blue-400 font-semibold">Featured Project</span>
 							</div>
 							<h2 className="md:text-4xl text-lg font-bold mb-6 text-white">ETH-Farm Warehouse Receipt System</h2>
 							<p className="md:text-lg text-[15px] text-gray-300 max-w-4xl mx-auto mb-8">
@@ -183,7 +183,7 @@ export default function PortfolioPage() {
 									].map((feature, index) => (
 										<div
 											key={index}
-											className="flex items-start gap-4 p-4 bg-gray-900/30 rounded-lg border border-gray-800"
+											className="flex items-start gap-4 py-4 md:px-4 px-2 bg-gray-900/30 rounded-lg border border-gray-800"
 										>
 											<div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center text-blue-400 flex-shrink-0">
 												{feature.icon}
