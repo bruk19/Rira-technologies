@@ -109,7 +109,7 @@ function MagneticCard({
           {card.title}
         </h3>
 
-        <p className="text-gray-400 group-hover:text-gray-300 transition-colors flex-grow relative z-10">
+        <p className="md:text-[14px] text-sm text-gray-400 group-hover:text-gray-300 transition-colors flex-grow relative z-10">
           {card.description}
         </p>
 

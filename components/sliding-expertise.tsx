@@ -66,25 +66,25 @@ export default function SlidingExpertise() {
   }, [])
 
   return (
-    <section className="py-20 px-4 relative z-10 bg-black">
+    <section className="md:py-20 py-4 px-4 relative z-10 bg-black">
       <div className="container mx-auto max-w-6xl">
         <ScaleOnScroll>
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-semibold mb-6 text-white">Our Expertise</h2>
-            <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+            <h2 className="md:text-4xl text-2xl font-semibold mb-6 text-white">Our Expertise</h2>
+            <p className="md:text-lg text-sm text-gray-400 max-w-2xl mx-auto">
               Cutting-edge technologies and frameworks we master to deliver exceptional results
             </p>
           </div>
         </ScaleOnScroll>
 
         {/* Sliding Logos Container */}
-        <div className="overflow-hidden py-8">
-          <div ref={containerRef} className="flex gap-12 items-center whitespace-nowrap">
+        <div className="overflow-hidden md:py-8 py-2">
+          <div ref={containerRef} className="flex md:gap-12 gap-4 items-center whitespace-nowrap">
             {/* First set of logos */}
             {services.map((service, index) => (
               <div
                 key={`first-${index}`}
-                className="flex items-center gap-4 bg-gray-900/50 px-8 py-4 rounded-full border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:scale-105 group flex-shrink-0"
+                className="flex items-center gap-4 bg-gray-900/50 md:px-8 px-4 py-4 rounded-full border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:scale-105 group flex-shrink-0"
               >
                 <div
                   className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}
