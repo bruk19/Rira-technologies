@@ -32,17 +32,16 @@ export default function AboutPage() {
       <section className="pt-32 pb-20 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl text-center">
           <ScrollReveal>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Pioneering Web3 Innovation in Ethiopia</h1>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-12 leading-relaxed">
-              We are Ethiopia's first Web3 agency, dedicated to bridging the gap between traditional business and the
-              decentralized future through innovative blockchain solutions.
+            <h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">Pioneering Web3 Innovation</h1>
+            <p className="text-lg text-gray-400 max-w-4xl mx-auto mb-2 leading-relaxed">
+              We are a Web3 agency that also works with Web2, dedicated to bridging the gap between traditional business and the decentralized future through innovative blockchain solutions.
             </p>
           </ScrollReveal>
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-20 px-4 relative z-10">
+      <section className="md:py-6 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <ScaleOnScroll>
@@ -87,7 +86,7 @@ export default function AboutPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-8">
             <ScrollReveal>
-              <Card className="bg-gradient-to-br from-blue-900/20 to-purple-900/20 border-blue-500/30 backdrop-blur-sm h-full">
+              <Card className="bg-gray-800 border-gray-700 backdrop-blur-sm h-full">
                 <CardContent className="p-8">
                   <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
                     <Target className="w-8 h-8 text-white" />
@@ -102,7 +101,7 @@ export default function AboutPage() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.1}>
-              <Card className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 border-purple-500/30 backdrop-blur-sm h-full">
+              <Card className="bg-gray-800 border-gray-700 backdrop-blur-sm h-full">
                 <CardContent className="p-8">
                   <div className="w-16 h-16 bg-gradient-to-r from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-6">
                     <Lightbulb className="w-8 h-8 text-white" />
@@ -261,23 +260,23 @@ export default function AboutPage() {
           <div className="space-y-8">
             {[
               {
-                year: "2022",
+                year: "2024",
                 title: "Foundation",
                 description: "Rira Technologies was founded with a vision to bring Web3 innovation to Ethiopia",
                 icon: <Rocket className="w-6 h-6" />,
                 gradient: "from-blue-500 to-cyan-500",
               },
               {
-                year: "2023",
+                year: "2024",
                 title: "First Major Project",
                 description: "Launched the Farmer Collateral System, revolutionizing agricultural financing",
                 icon: <TrendingUp className="w-6 h-6" />,
                 gradient: "from-green-500 to-emerald-500",
               },
               {
-                year: "2024",
+                year: "2025",
                 title: "Market Leadership",
-                description: "Became Ethiopia's leading Web3 agency with 50+ successful projects",
+                description: "Became Ethiopia's leading Web3 agency with 10+ successful projects",
                 icon: <Award className="w-6 h-6" />,
                 gradient: "from-purple-500 to-pink-500",
               },
@@ -320,7 +319,7 @@ export default function AboutPage() {
       </section>
 
       {/* Our Impact */}
-      <section className="py-20 px-4 relative z-10 bg-black">
+      <section className="py-14 px-4 relative z-10 bg-black">
         <div className="container mx-auto max-w-6xl">
           <ScaleOnScroll>
             <div className="text-center mb-16">
@@ -333,9 +332,9 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "50+", label: "Projects Delivered", icon: "🚀" },
-              { number: "500+", label: "Farmers Empowered", icon: "🌾" },
-              { number: "$2M+", label: "Financing Unlocked", icon: "💰" },
+              { number: "10+", label: "Projects Delivered", icon: "🚀" },
+              { number: "100+", label: "Farmers Empowered", icon: "🌾" },
+              { number: "6B+ ETB", label: "Financing Unlocked", icon: "💰" },
               { number: "85%", label: "Dispute Reduction", icon: "📊" },
             ].map((stat, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
@@ -352,62 +351,95 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 px-4 relative z-10 bg-black">
-        <div className="container mx-auto max-w-6xl">
-          <ScaleOnScroll>
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-white">Meet Our Team</h2>
-              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-                The passionate individuals driving Web3 innovation in Ethiopia
-              </p>
-            </div>
-          </ScaleOnScroll>
+    {/* Team Section */}
+<section className="py-20 px-4 relative z-10 bg-black">
+  <div className="container mx-auto max-w-6xl">
+    <ScaleOnScroll>
+      <div className="text-center mb-16">
+        <h2 className="text-4xl font-bold mb-6 text-white">Meet Our Team</h2>
+        <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+          The passionate individuals driving Web3 innovation in Ethiopia
+        </p>
+      </div>
+    </ScaleOnScroll>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                name: "Alex Tadesse",
-                role: "Founder & CEO",
-                description: "Blockchain visionary with 8+ years in Web3 development",
-                gradient: "from-blue-500 to-purple-600",
-              },
-              {
-                name: "Sarah Bekele",
-                role: "CTO",
-                description: "Smart contract expert and security specialist",
-                gradient: "from-purple-500 to-pink-600",
-              },
-              {
-                name: "Michael Haile",
-                role: "Lead Developer",
-                description: "Full-stack developer specializing in DeFi solutions",
-                gradient: "from-green-500 to-emerald-600",
-              },
-            ].map((member, index) => (
-              <ScrollReveal key={index} delay={index * 0.1}>
-                <Card className="bg-gray-900/50 border-gray-800 hover:border-gray-700 transition-all duration-500 hover:scale-105 group">
-                  <CardContent className="p-8 text-center">
-                    <div
-                      className={`w-24 h-24 rounded-full bg-gradient-to-r ${member.gradient} mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold group-hover:scale-110 transition-transform duration-300`}
-                    >
-                      {member.name
-                        .split(" ")
-                        .map((n) => n[0])
-                        .join("")}
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-gray-100 transition-colors">
-                      {member.name}
-                    </h3>
-                    <p className="text-blue-400 font-semibold mb-4">{member.role}</p>
-                    <p className="text-gray-400 group-hover:text-gray-300 transition-colors">{member.description}</p>
-                  </CardContent>
-                </Card>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
+    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+      {[
+        {
+          name: "Addis Belete",
+          role: "Co-founder & CEO",
+          description: "Web3 Software Engineer with extensive expertise in decentralized finance.",
+          gradient: "from-blue-500 to-purple-600",
+          socials: {
+            linkedin: "https://linkedin.com/in/addisbelete",
+            twitter: "https://twitter.com/addisbelete",
+          },
+        },
+        {
+          name: "Bruk Teshome",
+          role: "Co-founder & CTO",
+          description: "Web3 Software Engineer with extensive expertise in decentralized finance and SEO.",
+          gradient: "from-purple-500 to-pink-600",
+          socials: {
+            linkedin: "https://linkedin.com/in/brukteshome",
+            twitter: "https://twitter.com/brukteshome",
+          },
+        },
+        {
+          name: "Dr. Mesay Bejiga",
+          role: "Senior AI Scientist",
+          description: "Senior Machine Learning and Artificial Intelligence Scientist with over 15 years of experience.",
+          gradient: "from-green-500 to-emerald-600",
+          socials: {
+            linkedin: "https://linkedin.com/in/mesaybejiga",
+          },
+        },
+        {
+          name: "Bereket Bejiga",
+          role: "Lead Developer",
+          description: "Lead Software Engineer with over a decade of professional experience.",
+          gradient: "from-green-500 to-emerald-600",
+          socials: {
+            linkedin: "https://linkedin.com/in/bereketbejiga",
+          },
+        },
+      ].map((member, index) => (
+        <ScrollReveal key={index} delay={index * 0.1}>
+          <Card className="bg-gray-900/50 border-gray-800 hover:border-gray-700 transition-all duration-500 hover:scale-105 group">
+            <CardContent className="p-8 text-center">
+              <div
+                className={`w-24 h-24 rounded-full bg-gradient-to-r ${member.gradient} mx-auto mb-6 flex items-center justify-center text-white text-2xl font-bold group-hover:scale-110 transition-transform duration-300`}
+              >
+                {member.name
+                  .split(" ")
+                  .map((n) => n[0])
+                  .join("")}
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-gray-100 transition-colors">
+                {member.name}
+              </h3>
+              <p className="text-blue-400 font-semibold mb-4">{member.role}</p>
+              <p className="text-gray-400 group-hover:text-gray-300 transition-colors">{member.description}</p>
+              <div className="flex justify-center space-x-4 mt-4">
+                {member.socials?.linkedin && (
+                  <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8.5 8h3.8v2.3h.1c.53-1 1.84-2.3 3.8-2.3 4.06 0 4.8 2.67 4.8 6.1V24h-4v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V24h-4V8z"/></svg>
+                  </a>
+                )}
+                {member.socials?.twitter && (
+                  <a href={member.socials.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.56c-.89.39-1.83.65-2.83.77a4.92 4.92 0 0 0 2.15-2.7 9.85 9.85 0 0 1-3.13 1.2 4.92 4.92 0 0 0-8.4 4.48A13.94 13.94 0 0 1 1.64 3.15a4.92 4.92 0 0 0 1.52 6.57 4.9 4.9 0 0 1-2.23-.62v.06a4.92 4.92 0 0 0 3.94 4.82 4.93 4.93 0 0 1-2.22.08 4.93 4.93 0 0 0 4.6 3.42A9.86 9.86 0 0 1 0 21.54a13.9 13.9 0 0 0 7.55 2.21c9.06 0 14.01-7.5 14.01-14.01 0-.21 0-.42-.02-.63a10.02 10.02 0 0 0 2.46-2.56z"/></svg>
+                  </a>
+                )}
+              </div>
+            </CardContent>
+          </Card>
+        </ScrollReveal>
+      ))}
+    </div>
+  </div>
+</section>
+
 
       {/* CTA Section */}
       <section className="py-20 px-4 relative z-10 bg-black">
