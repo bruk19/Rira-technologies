@@ -14,7 +14,7 @@ export default function PortfolioPage() {
 			<CleanBackground />
 			<Navigation />
 			{/* Hero Section */}
-			<section className="pt-32 md:pb-14 pb-6 px-4 relative z-10">
+			<section className="pt-32 md:pb-6 pb-6 px-4 relative z-10">
 				<div className="container mx-auto max-w-6xl text-center">
 					<ScrollReveal>
 						<h1 className="text-3xl md:text-5xl font-bold mb-6 text-white">Our Portfolio</h1>
@@ -31,7 +31,7 @@ export default function PortfolioPage() {
 			</section>
 
 			{/* Portfolio Stats */}
-			<section className="md:py-12 py-6 px-4 relative z-10">
+			<section className="md:py-3 py-6 px-4 relative z-10">
 				<div className="container mx-auto max-w-6xl">
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						{[

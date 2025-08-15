@@ -237,7 +237,7 @@ export default function HomePage() {
               { number: 50, label: "Projects Completed", icon: "✅", suffix: "+" },
             ].map((stat, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
-                <Card className="bg-gray-900 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:scale-105">
+                <Card className="bg-gray-800 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:scale-105">
                   <CardContent className="p-6 text-center">
                     <div className="text-3xl mb-2">{stat.icon}</div>
                     <div className="text-3xl font-bold mb-2">
@@ -259,7 +259,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="md:py-20 py-4 md:px-4 px-2 relative z-10 bg-black">
+      <section className="md:py-14 py-4 md:px-4 px-2 relative z-10 bg-black">
         <div className="container mx-auto max-w-4xl text-center">
           <ScaleOnScroll>
             <div className="bg-gray-900 rounded-lg md:p-12 p-6 border border-gray-800">
