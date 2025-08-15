@@ -35,9 +35,9 @@ export default function PortfolioPage() {
         <div className="container mx-auto max-w-6xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: "50+", label: "Projects Delivered", icon: "🚀" },
-              { number: "25+", label: "Happy Clients", icon: "⭐" },
-              { number: "5", label: "Industries Served", icon: "🏢" },
+              { number: "10+", label: "Projects Delivered", icon: "🚀" },
+              { number: "15+", label: "Happy Clients", icon: "⭐" },
+              { number: "3", label: "Industries Served", icon: "🏢" },
               { number: "100%", label: "Success Rate", icon: "✅" },
             ].map((stat, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
@@ -63,12 +63,12 @@ export default function PortfolioPage() {
                 <span className="text-green-400 font-semibold">Featured Project</span>
               </div>
               <h2 className="text-4xl font-bold mb-6 text-white">ETH-Farm Warehouse Receipt System</h2>
-              <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
+              <p className="text-lg text-gray-300 max-w-4xl mx-auto mb-8">
                 A comprehensive digital platform that revolutionizes warehouse receipt financing processes in Ethiopia,
-                connecting farmers, banks, and government institutions in a seamless ecosystem.
+                connecting farmers, depositors, banks, warehouses, warehouse operators, MOTRI and government institutions in a seamless ecosystem.
               </p>
-              <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-                Developed for the Ethiopian Ministry of Trade and Regional Integration, this system has transformed how
+              <p className="text-[16px] text-gray-400 max-w-3xl mx-auto">
+                Developed for the <span className="text-blue-700 font-bold">Ethiopian Ministry of Trade and Regional Integration</span>, this system has transformed how
                 agricultural financing works across the country, making it more transparent, efficient, and accessible
                 to farmers.
               </p>
@@ -131,6 +131,7 @@ export default function PortfolioPage() {
                       "Automated loan lifecycle management",
                       "Secure document storage and verification",
                       "Integration with National ID and SMS systems",
+                      "Integration with E-trade to validate trade licenses",
                     ].map((solution, index) => (
                       <li key={index} className="flex items-start gap-3 text-gray-400">
                         <CheckCircle className="w-5 h-5 text-green-400 flex-shrink-0 mt-0.5" />
@@ -198,16 +199,16 @@ export default function PortfolioPage() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.2}>
-              <div className="bg-gray-900/50 rounded-lg p-8 border border-gray-800">
+              <div className="bg-gray-900/50 rounded-lg p-2 border border-gray-800">
                 <img
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/eth-farm.png"
                   alt="ETH-Farm Dashboard Interface"
                   className="w-full h-80 object-cover rounded-lg mb-6"
                 />
-                <h4 className="text-xl font-bold text-white mb-4">System Dashboard</h4>
-                <p className="text-gray-400 leading-relaxed">
+                <h4 className="text-xl font-bold text-white mb-4 px-4">System Dashboard</h4>
+                <p className="text-gray-400 leading-relaxed px-4">
                   The intuitive dashboard provides comprehensive insights into loan applications, collateral management,
-                  and system performance metrics. Each stakeholder has access to relevant information with real-time
+                  and system performance metrics. Each stakeholder has access to their specific dashboard with real-time
                   updates and notifications.
                 </p>
               </div>
@@ -265,42 +266,6 @@ export default function PortfolioPage() {
               ))}
             </div>
           </div>
-
-          {/* Technology Stack */}
-          <div className="mb-16">
-            <ScaleOnScroll>
-              <div className="text-center mb-12">
-                <h3 className="text-3xl font-bold mb-6 text-white">Technology Stack</h3>
-                <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-                  Built with modern, scalable technologies to ensure performance, security, and maintainability.
-                </p>
-              </div>
-            </ScaleOnScroll>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
-              {[
-                { name: "React", color: "from-blue-500 to-cyan-500" },
-                { name: "Node.js", color: "from-green-500 to-emerald-500" },
-                { name: "PostgreSQL", color: "from-blue-600 to-indigo-600" },
-                { name: "Express", color: "from-gray-600 to-gray-800" },
-                { name: "JWT Auth", color: "from-purple-500 to-pink-500" },
-                { name: "REST API", color: "from-orange-500 to-red-500" },
-              ].map((tech, index) => (
-                <ScrollReveal key={index} delay={index * 0.05}>
-                  <div className="bg-gray-900/50 border border-gray-800 rounded-lg p-4 text-center hover:border-gray-600 transition-all duration-300 hover:scale-105 group">
-                    <div
-                      className={`w-12 h-12 rounded-lg bg-gradient-to-r ${tech.color} mx-auto mb-3 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}
-                    >
-                      <Building className="w-6 h-6 text-white" />
-                    </div>
-                    <span className="text-gray-300 text-sm font-medium group-hover:text-white transition-colors">
-                      {tech.name}
-                    </span>
-                  </div>
-                </ScrollReveal>
-              ))}
-            </div>
-          </div>
         </div>
       </section>
 
@@ -308,20 +273,17 @@ export default function PortfolioPage() {
       <section className="py-20 px-4 relative z-10 bg-black">
         <div className="container mx-auto max-w-4xl">
           <ScrollReveal>
-            <Card className="bg-gradient-to-r from-blue-900/20 to-purple-900/20 border-blue-500/30 backdrop-blur-sm">
-              <CardContent className="p-12 text-center">
+            <Card className="bg-gradient-to-r from-blue-500 to-purple-600 backdrop-blur-sm">
+              <CardContent className="p-10 text-center">
                 <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
                   <Users className="w-8 h-8 text-white" />
                 </div>
-                <blockquote className="text-2xl text-white mb-8 leading-relaxed italic">
-                  "The ETH-Farm system has revolutionized our agricultural financing processes. What used to take weeks
-                  of paperwork and manual verification now happens in days with complete transparency. This digital
-                  transformation has enabled us to serve more farmers and provide better financial services to the
-                  agricultural sector."
+                <blockquote className="text-xl text-white mb-8 leading-relaxed italic">
+"ETH-Farm has transformed Ethiopia’s agricultural ecosystem. For farmers, access to financing and resources that once took weeks — burdened by paperwork, travel, and delays — now happens in just days, with complete transparency. This innovation has opened doors for thousands of farmers to receive timely support, fair pricing, and direct connections to markets. Beyond speeding up processes, ETH-Farm empowers rural communities, increases productivity, and ensures that the benefits of agriculture are felt across the nation."
                 </blockquote>
                 <div className="text-center">
-                  <div className="text-lg font-bold text-white">Ministry of Trade and Regional Integration</div>
-                  <div className="text-blue-400">Federal Democratic Republic of Ethiopia</div>
+                  <div className="text-lg font-bold text-white">Ministry of Trade and Regional Integration - MOTRI</div>
+                  <div className="text-blue-300 font-semibold">Federal Democratic Republic of Ethiopia</div>
                 </div>
               </CardContent>
             </Card>

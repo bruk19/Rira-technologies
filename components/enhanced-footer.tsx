@@ -17,7 +17,7 @@ export default function EnhancedFooter() {
   ]
 
   return (
-    <footer className="bg-black border-t border-gray-600 relative overflow-hidden">
+    <footer className="bg-black border-t border-gray-700 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
@@ -116,13 +116,13 @@ export default function EnhancedFooter() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="mt-16 pt-8 border-t border-gray-600">
+          <div className="mt-16 pt-8 border-t border-gray-700">
             <ScrollReveal delay={0.4}>
               <div className="flex flex-col md:flex-row justify-between items-center">
                 <p className="text-gray-400 text-sm mb-4 md:mb-0">
                   © 2025 Rira Technologies. All rights reserved. 
                 </p>
-                <div className="flex md:space-x-6 space-x-3">
+                <div className="flex md:space-x-10 space-x-3">
                   <Link href="#" className="text-gray-400 hover:text-blue-400 text-sm transition-colors duration-300">
                     Privacy Policy
                   </Link>
