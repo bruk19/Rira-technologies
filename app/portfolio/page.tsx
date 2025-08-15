@@ -13,7 +13,6 @@ export default function PortfolioPage() {
     <div className="min-h-screen bg-gray-950 text-white relative overflow-x-hidden">
       <CleanBackground />
       <Navigation />
-
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl text-center">
@@ -424,7 +423,6 @@ export default function PortfolioPage() {
           </ScaleOnScroll>
         </div>
       </section>
-
       {/* Footer */}
       <EnhancedFooter />
     </div>
