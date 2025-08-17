@@ -127,11 +127,11 @@ export default function ContactPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 relative z-10">
+      <section className="pt-32 md:pb-16 pb-0 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl text-center">
           <ScrollReveal>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white">Let's Build the Future Together</h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
+            <h1 className="text-2xl md:text-5xl font-bold mb-6 text-white">Let's Build the Future Together</h1>
+            <p className="md:text-xl text-[15px] text-gray-300 max-w-3xl mx-auto mb-6">
               Ready to start your Web3 journey? We're here to help you transform your ideas into revolutionary
               blockchain solutions.
             </p>
@@ -140,14 +140,14 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form & Info */}
-      <section className="py-20 px-4 relative z-10">
+      <section className="py-10 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <Card className="bg-gray-900/50 border-gray-700">
-              <CardContent className="p-8">
-                <h2 className="text-3xl font-bold mb-6 text-white">Start Your Project</h2>
-                <p className="text-gray-300 mb-8">
+              <CardContent className="py-8 md:px-8 px-4">
+                <h2 className="md:text-3xl text-lg font-bold mb-6 text-white">Start Your Project</h2>
+                <p className="text-gray-300 mb-8 md:text-[16px] text-sm">
                   Tell us about your project and we'll get back to you within 24 hours.
                 </p>
 
@@ -216,7 +216,7 @@ export default function ContactPage() {
 
                   <Button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white py-3 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105"
+                    className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white py-3 md:text-lg text-[16px] font-semibold rounded-full transition-all duration-300 hover:scale-105"
                   >
                     Send Message
                     <Send className="ml-2 w-5 h-5" />
@@ -228,8 +228,8 @@ export default function ContactPage() {
             {/* Contact Information */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-6 text-white">Get In Touch</h2>
-                <p className="text-gray-300 mb-8">
+                <h2 className="md:text-3xl text-lg font-bold md:mb-6 mb-2 text-white">Get In Touch</h2>
+                <p className="text-gray-300 mb-8 md:text-[16px] text-sm">
                   We're here to help you navigate the Web3 landscape and bring your blockchain vision to life.
                 </p>
               </div>
@@ -240,16 +240,16 @@ export default function ContactPage() {
                     key={index}
                     className="bg-gray-900/50 border-gray-700 hover:border-cyan-500 transition-all duration-300 group"
                   >
-                    <CardContent className="p-6">
+                    <CardContent className="md:p-6 p-3">
                       <div className="flex items-start space-x-4">
-                        <div className="w-12 h-12 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+                        <div className="md:w-12 md:h-12 w-10 h-10 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
                           {info.icon}
                         </div>
                         <div>
                           <h3 className="font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
                             {info.title}
                           </h3>
-                          <p className="text-cyan-400 font-semibold mb-1">{info.details}</p>
+                          <p className="text-cyan-400 font-semibold mb-1 md:text-16 text-sm">{info.details}</p>
                           <p className="text-gray-400 text-sm">{info.description}</p>
                         </div>
                       </div>
@@ -260,7 +260,7 @@ export default function ContactPage() {
 
               {/* Social Links */}
               <div>
-                <h3 className="text-xl font-bold mb-4 text-white">Follow Us</h3>
+                <h3 className="md:text-xl text-lg font-bold mb-4 text-white">Follow Us</h3>
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (
                     <a
@@ -279,12 +279,12 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 px-4 relative z-10">
-        <div className="container mx-auto max-w-4xl">
+      <section className="md:py-20 py-10 px-4 relative z-10">
+        <div className="container mx-auto max-w-5xl">
           <ScaleOnScroll>
-            <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-6 text-white">Frequently Asked Questions</h2>
-              <p className="text-lg text-gray-400 max-w-2xl mx-auto">
+            <div className="text-center md:mb-16 mb-6">
+              <h2 className="md:text-4xl text-2xl font-bold mb-6 text-white">Frequently Asked Questions</h2>
+              <p className="md:text-lg text-[15px] text-gray-400 max-w-2xl mx-auto">
                 Find answers to common questions about our services and development process
               </p>
             </div>
@@ -299,7 +299,7 @@ export default function ContactPage() {
                       onClick={() => toggleFaq(index)}
                       className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-800/30 transition-colors duration-300"
                     >
-                      <h3 className="font-bold text-white text-lg pr-4">{faq.question}</h3>
+                      <h3 className="font-bold text-white md:text-lg text-sm pr-4">{faq.question}</h3>
                       <div className="flex-shrink-0">
                         {openFaq === index ? (
                           <ChevronUp className="w-5 h-5 text-cyan-400" />
@@ -314,9 +314,9 @@ export default function ContactPage() {
                         openFaq === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
                       }`}
                     >
-                      <div className="px-6 pb-6">
+                      <div className="md:px-6 px-3 md:pb-6 pb-3">
                         <div className="border-t border-gray-700 pt-4">
-                          <p className="text-gray-300 leading-relaxed">{faq.answer}</p>
+                          <p className="text-gray-300 leading-relaxed text-sm">{faq.answer}</p>
                         </div>
                       </div>
                     </div>
