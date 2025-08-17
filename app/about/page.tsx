@@ -47,16 +47,16 @@ export default function AboutPage() {
             <ScaleOnScroll>
               <div>
                 <h2 className="md:text-4xl text-xl font-bold mb-6 text-white">Our Story</h2>
-                <p className="md:text-lg text-sm text-gray-400 mb-6 leading-relaxed">
+                <p className="md:text-[16px] text-sm text-gray-400 mb-6 leading-relaxed">
                   Founded with a vision to transform Ethiopia's digital landscape, Rira Technologies emerged as a
                   pioneer in the Web3 space. We recognized the immense potential of blockchain technology to solve
                   real-world problems and create meaningful impact in our communities.
                 </p>
-                <p className="md:text-lg text-sm text-gray-400 mb-6 leading-relaxed">
+                <p className="md:text-[16px] text-sm text-gray-400 mb-6 leading-relaxed">
                   Starting with a small team of passionate developers and blockchain enthusiasts, we've grown into
                   Ethiopia's leading Web3 agency, serving clients across agriculture, finance, and government sectors.
                 </p>
-                <p className="md:text-lg text-sm text-gray-400 mb-8 leading-relaxed">
+                <p className="md:text-[16px] text-sm text-gray-400 mb-8 leading-relaxed">
                   Our journey is driven by the belief that technology should serve humanity, and blockchain represents
                   the next evolution in creating transparent, secure, and accessible digital solutions.
                 </p>

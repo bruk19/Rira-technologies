@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin, Twitter, Linkedin, Github, Globe } from "lucide-re
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-gray-800 py-16 px-4">
+    <footer className="bg-black border-t border-gray-800 pt-10 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -15,8 +15,7 @@ export default function Footer() {
               <span className="text-xl font-semibold text-white">Rira Technologies</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Ethiopia's first Web3 agency specializing in blockchain development, decentralized applications, and
-              traditional web solutions.
+              Pioneering the future of Web3 — building blockchain solutions, decentralized applications, and next-gen web experiences.
             </p>
             <div className="flex space-x-4">
               <a
@@ -77,7 +76,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-gray-400" />
-                <span className="text-gray-400">+251 913 020 845 | 943 413 849</span>
+                <span className="text-gray-400">+251 913 020 845</span>
               </li>
               <li className="flex items-center space-x-3">
                 <MapPin className="w-4 h-4 text-gray-400" />
