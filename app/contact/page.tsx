@@ -36,12 +36,38 @@ export default function ContactPage() {
   })
 
   const [openFaq, setOpenFaq] = useState<number | null>(null)
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle")
+  const [responseMessage, setResponseMessage] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Handle form submission
-    console.log("Form submitted:", formData)
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    // avoid JSON parse error if response body is empty
+    let data;
+    try {
+      data = await res.json();
+    } catch {
+      throw new Error("Server did not return JSON");
+    }
+
+    if (res.ok && data.success) {
+      alert("✅ Message sent successfully!");
+      setFormData({ name: "", email: "", phone: "", company: "", message: "" });
+    } else {
+      alert("❌ Failed: " + (data?.message || "Unknown error"));
+    }
+  } catch (err: any) {
+    console.error("Fetch error:", err);
+    alert("⚠️ " + err.message);
   }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
