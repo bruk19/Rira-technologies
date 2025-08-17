@@ -64,7 +64,7 @@ export default function ContactPage() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Call Us",
-      details: "+251 911 123 456",
+      details: "+251 913 020 845",
       description: "Mon-Fri from 8am to 5pm",
     },
     {
@@ -187,7 +187,7 @@ export default function ContactPage() {
                         value={formData.phone}
                         onChange={handleChange}
                         className="bg-gray-800 border-gray-600 text-white focus:border-cyan-500"
-                        placeholder="+251 911 123 456"
+                        placeholder="+251 912 020 845"
                       />
                     </div>
                     <div>

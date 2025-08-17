@@ -886,6 +886,12 @@ video {
 .mt-auto {
   margin-top: auto;
 }
+.mt-6 {
+  margin-top: 1.5rem;
+}
+.mt-10 {
+  margin-top: 2.5rem;
+}
 .block {
   display: block;
 }
@@ -1494,6 +1500,31 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+.space-x-\[10px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(10px * var(--tw-space-x-reverse));
+  margin-left: calc(10px * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-\[12px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(12px * var(--tw-space-x-reverse));
+  margin-left: calc(12px * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-\[15px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(15px * var(--tw-space-x-reverse));
+  margin-left: calc(15px * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-\[16px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(16px * var(--tw-space-x-reverse));
+  margin-left: calc(16px * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-\[18px\] > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(18px * var(--tw-space-x-reverse));
+  margin-left: calc(18px * calc(1 - var(--tw-space-x-reverse)));
 }
 .overflow-auto {
   overflow: auto;
@@ -4003,6 +4034,10 @@ html {
     margin-top: 2rem;
   }
 
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .md\:block {
     display: block;
   }
@@ -4085,6 +4120,10 @@ html {
 
   .md\:max-w-\[420px\] {
     max-width: 420px;
+  }
+
+  .md\:max-w-6xl {
+    max-width: 72rem;
   }
 
   .md\:grid-cols-1 {
