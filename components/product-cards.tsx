@@ -14,7 +14,7 @@ export default function ProductCards() {
 			<div className="md:space-y-8">
 				{/* Main Product Card */}
 				<ScrollReveal>
-					<Card className="bg-white text-black md:overflow-hidden rounded-3xl md:w-full ">
+					<Card className="bg-gradient-to-b from-white to-gray-100 text-black md:overflow-hidden rounded-3xl md:w-full ">
 						<CardContent className="pt-8">
 							<div className="">
 								<h3 className="md:text-3xl text-xl font-bold mb-4 leading-tight">
@@ -46,7 +46,7 @@ export default function ProductCards() {
 
 				{/* Performance Monitoring Card */}
 				<ScrollReveal delay={0.2}>
-					<Card className="bg-white text-black rounded-3xl md:mt-0 mt-8">
+					<Card className="bg-gray-200 text-black rounded-3xl md:mt-0 mt-8">
 						<CardContent className="p-8">
 							<BarChart3 className="w-16 h-16 text-blue-700" />
 							<h3 className="md:text-2xl text-xl font-bold mb-4 mt-2">Performance Monitoring & Analytics</h3>
@@ -71,7 +71,7 @@ export default function ProductCards() {
 			<div className="space-y-8">
 				{/* Custom Solutions Card */}
 				<ScrollReveal delay={0.1}>
-					<Card className="bg-white text-black rounded-3xl">
+					<Card className="bg-gray-200 text-black rounded-3xl">
 						<CardContent className="p-8">
 							<Blocks className="w-16 h-16 text-blue-700" />
 							<h3 className="md:text-2xl text-xl font-bold mb-4 mt-2">Custom Solutions for Blockchain Projects</h3>

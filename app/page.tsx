@@ -116,11 +116,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Dark Transition */}
-      <DarkTransition />
-
       {/* Products Section */}
-      <section id="products" className="pb-20 px-4 relative z-10 bg-black">
+      <section id="products" className="py-20 pb-20 px-4 relative z-10 bg-black">
         <div className="container mx-auto max-w-6xl">
           <ScaleOnScroll>
             <div className="text-center mb-16">
@@ -144,7 +141,7 @@ export default function HomePage() {
       </section>
 
       {/* Web3 Solutions Use Cases */}
-      <section id="solutions" className="md:py-20 py-14 px-4 relative z-10 bg-black">
+      <section id="solutions" className="md:py-8 py-6 px-4 relative z-10 bg-black">
         <div className="container mx-auto max-w-6xl">
           <ScaleOnScroll>
             <div className="text-center mb-16">

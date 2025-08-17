@@ -345,9 +345,9 @@ export default function ContactPage() {
 									<CardContent className="p-0">
 										<button
 											onClick={() => toggleFaq(index)}
-											className="w-full p-6 text-left flex items-center justify-between hover:bg-gray-800/30 transition-colors duration-300"
+											className="w-full px-6 md:py-6 py-2 text-left flex items-center justify-between hover:bg-gray-800/30 transition-colors duration-300"
 										>
-											<h3 className="font-bold text-white md:text-lg text-sm pr-4">{faq.question}</h3>
+											<h3 className="font-bold text-gray-200 md:text-lg text-sm pr-4">{faq.question}</h3>
 											<div className="flex-shrink-0">
 												{openFaq === index ? (
 													<ChevronUp className="w-5 h-5 text-cyan-400" />

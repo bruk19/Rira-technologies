@@ -33,7 +33,7 @@ export default function EnhancedFooter() {
       </div>
 
       {/* Main Footer Content */}
-      <section className="md:py-16 py-10 md:px-4 px-2 relative z-10">
+      <section className="py-16 md:px-4 px-2 relative z-10">
         <div className="container mx-auto md:max-w-6xl w-full">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 md:gap-8 gap-6">
             {/* Company Info */}
@@ -46,8 +46,7 @@ export default function EnhancedFooter() {
                   <span className="text-2xl font-bold text-white">Rira Technologies</span>
                 </div>
                 <p className="text-gray-400 mb-6 max-w-md leading-relaxed md:text-[16px] text-sm">
-                  Ethiopia's pioneering Web3 agency specializing in blockchain development, decentralized applications,
-                  and innovative digital solutions that bridge traditional business with the decentralized future.
+                  Pioneering the future of Web3 — building blockchain solutions, decentralized applications, and next-gen web experiences.
                 </p>
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (
