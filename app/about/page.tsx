@@ -34,7 +34,7 @@ export default function AboutPage() {
           <ScrollReveal>
             <h1 className="text-2xl md:text-5xl font-bold mb-6 text-white">Pioneering Web3 Innovation</h1>
             <p className="md:text-lg text-sm text-gray-400 max-w-4xl mx-auto mb-2 leading-relaxed">
-              We are a Web3 agency that also works with Web2, dedicated to bridging the gap between traditional business and the decentralized future through innovative blockchain solutions.
+              We are a Web3 agency that also works with Web2, dedicated to bridging the gap between Web2 business and the decentralized future through innovative blockchain solutions.
             </p>
           </ScrollReveal>
         </div>
@@ -69,11 +69,11 @@ export default function AboutPage() {
               </div>
             </ScaleOnScroll>
             <ScrollReveal delay={0.2}>
-              <div className="bg-gray-900 rounded-lg p-8 border border-gray-800">
+              <div className="">
                 <img
-                  src="/placeholder.svg?height=400&width=500"
+                  src="/entt.png"
                   alt="Our Team"
-                  className="w-full h-80 object-cover rounded-lg"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </ScrollReveal>

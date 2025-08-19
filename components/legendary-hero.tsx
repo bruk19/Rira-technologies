@@ -61,7 +61,7 @@ export default function LegendaryHero() {
           <p className="text-2xl md:text-3xl text-gray-300 mb-16 max-w-5xl mx-auto leading-relaxed font-medium">
             Pioneering <span className="text-cyan-400 font-bold">Web3 solutions</span> in Ethiopia. We create{" "}
             <span className="text-purple-400 font-bold">legendary</span> decentralized applications, smart contracts,
-            and bridge traditional businesses into the
+            and bridge Web2 businesses into the
             <span className="text-pink-400 font-bold"> blockchain revolution</span>.
           </p>
 
