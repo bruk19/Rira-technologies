@@ -54,7 +54,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Blockchain Matters with Photo */}
-      <section className="md:py-20 py-2 px-4 relative z-10">
+      <section className="md:py-10 py-2 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <ScaleOnScroll>
@@ -79,7 +79,7 @@ export default function HomePage() {
                 <img
                   src="/nn-unscreen.gif"
                   alt="Blockchain Network Visualization"
-                  className="w-full md:h-[400px] h-[300px] object-cover rounded-lg"
+                  className="w-full md:h-[480px] h-[300px] object-cover rounded-lg px-2"
                 />
               </div>
             </ScrollReveal>
@@ -90,12 +90,12 @@ export default function HomePage() {
       {/* Dual Scroll Velocity Text */}
       <DualScrollVelocity
         topTexts={[
-          "Innovation • Security • Accessibility • Enhanced Privacy • Decentralization • ",
-          "Transparency • Cost Efficiency • Speed • Traceability • Innovation • ",
+          "• Innovation • Security  • Accessibility  • Enhanced Privacy  • Decentralization",
+          "• Transparency  • Cost Efficiency  • Speed  • Traceability  • Smart Contracts",
         ]}
         bottomTexts={[
-          "Security • Accessibility • Enhanced Privacy • Decentralization • ",
-          "Efficiency • Speed • Traceability • Innovation • ",
+          "Reduced Fraud • Immutability • Automated Processes • Resilience • ",
+          "Data Ownership • Scalability • Interoperability • Tokenization • ",
         ]}
         className="text-2xl md:text-4xl font-medium"
       />
@@ -107,7 +107,7 @@ export default function HomePage() {
             <div className="text-center mb-16">
               <h2 className="md:text-4xl text-2xl font-semibold mb-6 text-gray-100">Services We Provide</h2>
               <p className="md:text-lg text-sm text-gray-400 max-w-2xl mx-auto">
-                Comprehensive technology solutions for both Web3 and traditional development
+                Comprehensive technology solutions for both Web3 and Web2 development
               </p>
             </div>
           </ScaleOnScroll>
@@ -262,7 +262,7 @@ export default function HomePage() {
             <div className="bg-gray-900 rounded-lg md:p-12 p-6 border border-gray-800">
               <h2 className="md:text-4xl text-2xl font-semibold mb-6 text-white">Ready to Start Your Project?</h2>
               <p className="md:text-lg text-[15px] text-gray-400 mb-8 max-w-2xl mx-auto">
-                Let's discuss how we can help bring your ideas to life with our expertise in both Web3 and traditional
+                Let's discuss how we can help bring your ideas to life with our expertise in both Web3 and Web2
                 development
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">

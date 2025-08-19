@@ -54,7 +54,7 @@ export default function DynamicHero() {
 
           {/* Description */}
           <p className="md:text-lg text-sm text-gray-500 mb-12 max-w-3xl mx-auto leading-relaxed">
-            We specialize in blockchain development, decentralized applications, and traditional web solutions including
+            We specialize in blockchain development, decentralized applications, and Web2 solutions including
             management systems, payment platforms, mobile apps, and modern websites.
           </p>
 

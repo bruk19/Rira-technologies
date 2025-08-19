@@ -163,7 +163,7 @@ export default function DevelopmentPage() {
               Building robust, scalable solutions tailored to your specific business requirements
             </p>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
-              From cutting-edge blockchain solutions to traditional web and mobile applications, we deliver
+              From cutting-edge blockchain solutions to Web2 and mobile applications, we deliver
               comprehensive technology solutions that drive innovation and create value for your business.
             </p>
 
@@ -244,7 +244,7 @@ export default function DevelopmentPage() {
           <ScaleOnScroll>
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                Traditional Development Services
+                Web2 Development Services
               </h2>
               <p className="text-xl text-gray-300 max-w-4xl mx-auto mb-8">
                 Comprehensive Web2 Solutions for Every Business Need
@@ -386,7 +386,7 @@ export default function DevelopmentPage() {
               {
                 icon: <Users className="w-8 h-8" />,
                 title: "Expert Team",
-                description: "Experienced developers with deep expertise in both Web3 and traditional technologies.",
+                description: "Experienced developers with deep expertise in both Web3 and Web2 technologies.",
               },
               {
                 icon: <Shield className="w-8 h-8" />,

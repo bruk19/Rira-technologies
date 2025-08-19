@@ -24,7 +24,7 @@ export default function PortfolioPage() {
 						</p>
 						<p className="md:text-lg text-sm text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed">
 							From government-level digital transformation to agricultural financing solutions, we've delivered
-							cutting-edge technology that bridges the gap between traditional systems and modern innovation.
+							cutting-edge technology that bridges the gap between Web2 systems and modern innovation.
 						</p>
 					</ScrollReveal>
 				</div>
@@ -62,7 +62,7 @@ export default function PortfolioPage() {
 							<div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-500/20 border border-blue-500/30 mb-6">
 								<span className="md-text-lg text-sm text-blue-400 font-semibold">Featured Project</span>
 							</div>
-							<h2 className="md:text-4xl text-lg font-bold mb-6 text-white">ETH-Farm Warehouse Receipt System</h2>
+							<h2 className="md:text-4xl text-lg font-bold mb-6 text-white">ETH-Farm Warehouse Financing Receipt System <a href="https://eth-farm.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-500 underline">(Ethfarm.finance)</a></h2>
 							<p className="md:text-lg text-[15px] text-gray-300 max-w-4xl mx-auto mb-8">
 								A comprehensive digital platform that revolutionizes warehouse receipt financing processes in Ethiopia,
 								connecting farmers, depositors, banks, warehouses, warehouse operators, MOTRI and government institutions in a seamless ecosystem.

@@ -28,7 +28,7 @@ export default function Hero() {
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
             Pioneering Web3 solutions in Ethiopia. We create innovative decentralized applications, smart contracts, and
-            bridge traditional businesses into the blockchain ecosystem.
+            bridge Web2 businesses into the blockchain ecosystem.
           </p>
 
           {/* CTA Buttons */}
