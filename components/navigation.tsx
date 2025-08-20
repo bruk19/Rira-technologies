@@ -20,8 +20,12 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center">
-              <Code className="w-5 h-5 text-white" />
+            <div className="w-8 h-8 rounded-lg flex items-center justify-center">
+              <img
+									src="/rira-logo.jpeg"
+									alt="logo"
+									className="w-full object-cover rounded-lg"
+								/>
             </div>
             <span className="text-lg font-semibold text-gray-100">Rira Technologies</span>
           </Link>
