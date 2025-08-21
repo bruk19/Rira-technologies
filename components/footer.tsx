@@ -10,7 +10,11 @@ export default function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-8 h-8 bg-gray-700 rounded-lg flex items-center justify-center">
-                <Globe className="w-5 h-5 text-white" />
+                <img
+									src="/eth-logo-b1.png"
+									alt="logo"
+									className="w-full object-cover rounded-lg"
+								/>
               </div>
               <span className="text-xl font-semibold text-white">Rira Technologies</span>
             </div>

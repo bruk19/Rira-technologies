@@ -19,10 +19,10 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
+          <Link href="/" className="flex items-center space-x-1">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center">
               <img
-									src="/rira-logo.jpeg"
+									src="/eth-logo-b1.png"
 									alt="logo"
 									className="w-full object-cover rounded-lg"
 								/>
