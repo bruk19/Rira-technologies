@@ -18,10 +18,15 @@ import MorphingText from "@/components/morphing-text"
 import ScrollTriggeredCounter from "@/components/scroll-triggered-counter"
 import LiquidButton from "@/components/liquid-button"
 import FloatingNavDots from "@/components/floating-nav-dots"
+import Head from 'next/head';
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-950 text-white relative overflow-x-hidden">
+      <Head>
+				<title>Home - Rira Technologies</title>
+				<meta name="description" content="Rira Technologies is a premier Web3 agency in Ethiopia, specializing in innovative blockchain solutions that bridge Web2 and Web3. Explore our services, products, and commitment to transforming digital landscapes." />
+			</Head>
       <CleanBackground />
       <Navigation />
       <FloatingNavDots />
