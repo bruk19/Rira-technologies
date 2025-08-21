@@ -6,7 +6,6 @@ import Navigation from "@/components/navigation"
 import CleanBackground from "@/components/clean-background"
 import ScrollReveal from "@/components/scroll-reveal"
 import ProductCards from "@/components/product-cards"
-import DarkTransition from "@/components/dark-transition"
 import EnhancedFooter from "@/components/enhanced-footer"
 import ScaleOnScroll from "@/components/scale-on-scroll"
 import UniqueServiceCards from "@/components/unique-service-cards"
@@ -18,15 +17,17 @@ import MorphingText from "@/components/morphing-text"
 import ScrollTriggeredCounter from "@/components/scroll-triggered-counter"
 import LiquidButton from "@/components/liquid-button"
 import FloatingNavDots from "@/components/floating-nav-dots"
-import Head from 'next/head';
+
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Home - Rira Technologies",
+  description: "Rira Technologies is a premier Web3 agency in Ethiopia, specializing in innovative blockchain solutions that bridge Web2 and Web3. Explore our services, products, and commitment to transforming digital landscapes.",
+}
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-950 text-white relative overflow-x-hidden">
-      <Head>
-				<title>Home - Rira Technologies</title>
-				<meta name="description" content="Rira Technologies is a premier Web3 agency in Ethiopia, specializing in innovative blockchain solutions that bridge Web2 and Web3. Explore our services, products, and commitment to transforming digital landscapes." />
-			</Head>
       <CleanBackground />
       <Navigation />
       <FloatingNavDots />

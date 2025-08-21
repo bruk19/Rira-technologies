@@ -4,9 +4,13 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Rira-Technologies',
-  description: 'rira-technologies.com',
-  generator: 'Rira Technologies',
+  title: "Rira Technologies",
+  description:
+    "Rira Technologies is a premier Web3 agency specializing in blockchain, decentralized applications, and digital solutions.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-16x16.png",
+  },
 }
 
 export default function RootLayout({

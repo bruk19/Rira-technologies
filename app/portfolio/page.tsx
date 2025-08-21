@@ -7,6 +7,13 @@ import CleanBackground from "@/components/clean-background"
 import ScrollReveal from "@/components/scroll-reveal"
 import ScaleOnScroll from "@/components/scale-on-scroll"
 import EnhancedFooter from "@/components/enhanced-footer"
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Portfolio - Rira Technologies",
+  description:
+    "Explore Rira Technologies' portfolio showcasing cutting-edge Web3 projects, blockchain applications, and digital solutions. Discover how we bridge Web2 and Web3 with impactful innovations for businesses and communities.",
+}
 
 export default function PortfolioPage() {
 	return (
