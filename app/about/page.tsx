@@ -21,15 +21,16 @@ import CleanBackground from "@/components/clean-background"
 import ScrollReveal from "@/components/scroll-reveal"
 import ScaleOnScroll from "@/components/scale-on-scroll"
 import EnhancedFooter from "@/components/enhanced-footer"
-import Head from 'next/head';
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "About Us - Rira Technologies",
+  description: "Learn more about Rira Technologies, Ethiopia's pioneering Web3 agency.",
+}
 
 export default function AboutPage() {
 	return (
 		<div className="min-h-screen bg-gray-950 text-white relative overflow-x-hidden">
-			<Head>
-				<title>About Us - Rira Technologies</title>
-				<meta name="description" content="Learn about Rira Technologies, a leading Web3 agency in Ethiopia, dedicated to bridging Web2 and Web3 through innovative blockchain solutions." />
-			</Head>
 			<CleanBackground />
 			<Navigation />
 
@@ -378,7 +379,9 @@ export default function AboutPage() {
 								image: "/add.png",
 								socials: {
 									linkedin: "https://linkedin.com/in/addis-belete",
-									twitter: "https://twitter.com/addisbelete",
+									discord: "https://discord.com/invite/VrfJrT7vuF",
+									whatsapp: "https://wa.me/+251943413849",
+									telegram: "https://t.me/Addis07",
 								},
 							},
 							{
@@ -389,7 +392,9 @@ export default function AboutPage() {
 								image: "/bruk.png",
 								socials: {
 									linkedin: "https://linkedin.com/in/bruk-teshome",
-									twitter: "https://twitter.com/brukteshome",
+									discord: "https://discord.com/invite/VrfJrT7vuF",
+									whatsapp: "https://wa.me/+251913020845",
+									telegram: "https://t.me/brukTesh",
 								},
 							},
 							{
@@ -421,7 +426,7 @@ export default function AboutPage() {
 										<img
 											src={member.image}
 											alt={member.name}
-											className="md:h-60 h-40 object-fit group-hover:scale-105 transition-transform duration-500"
+											className="md:h-80 h-60 object-fit group-hover:scale-105 transition-transform duration-500"
 										/>
 									</div>
 
@@ -443,30 +448,56 @@ export default function AboutPage() {
 													rel="noopener noreferrer"
 													className="text-gray-400 hover:text-blue-500 transition-colors"
 												>
-													<svg
-														xmlns="http://www.w3.org/2000/svg"
-														className="w-6 h-6"
-														fill="currentColor"
-														viewBox="0 0 24 24"
-													>
+													{/* LinkedIn */}
+													<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
 														<path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zM8.5 8h3.8v2.3h.1c.53-1 1.84-2.3 3.8-2.3 4.06 0 4.8 2.67 4.8 6.1V24h-4v-7.7c0-1.84-.03-4.2-2.56-4.2-2.56 0-2.95 2-2.95 4.07V24h-4V8z" />
 													</svg>
 												</a>
 											)}
-											{member.socials?.twitter && (
+
+											{member.socials?.discord && (
 												<a
-													href={member.socials.twitter}
+													href={member.socials.discord}
 													target="_blank"
 													rel="noopener noreferrer"
-													className="text-gray-400 hover:text-blue-400 transition-colors"
+													className="text-gray-400 hover:text-indigo-400 transition-colors"
 												>
+													{/* Discord */}
 													<svg
 														xmlns="http://www.w3.org/2000/svg"
 														className="w-6 h-6"
 														fill="currentColor"
 														viewBox="0 0 24 24"
 													>
-														<path d="M24 4.56c-.89.39-1.83.65-2.83.77a4.92 4.92 0 0 0 2.15-2.7 9.85 9.85 0 0 1-3.13 1.2 4.92 4.92 0 0 0-8.4 4.48A13.94 13.94 0 0 1 1.64 3.15a4.92 4.92 0 0 0 1.52 6.57 4.9 4.9 0 0 1-2.23-.62v.06a4.92 4.92 0 0 0 3.94 4.82 4.93 4.93 0 0 1-2.22.08 4.93 4.93 0 0 0 4.6 3.42A9.86 9.86 0 0 1 0 21.54a13.9 13.9 0 0 0 7.55 2.21c9.06 0 14.01-7.5 14.01-14.01 0-.21 0-.42-.02-.63a10.02 10.02 0 0 0 2.46-2.56z" />
+														<path d="M20.317 4.369A19.791 19.791 0 0 0 16.885 3c-.396.719-.833 1.69-1.146 2.465-1.063-.159-2.142-.236-3.222-.236-1.08 0-2.159.08-3.222.236-.313-.775-.75-1.746-1.146-2.465a19.79 19.79 0 0 0-3.432 1.369C3.804 9.049 3.065 13.58 3.293 18.063a19.9 19.9 0 0 0 5.89 2.893c.477-.647.901-1.335 1.262-2.058a12.74 12.74 0 0 1-1.978-.949c.166-.121.328-.246.484-.374 3.806 1.791 8.38 1.791 12.186 0 .158.129.32.253.484.374-.629.388-1.293.703-1.978.949.361.723.785 1.411 1.262 2.058a19.9 19.9 0 0 0 5.89-2.893c.273-4.773-.465-9.304-2.146-13.694zM9.5 14.5c-.828 0-1.5-.9-1.5-2s.672-2 1.5-2 1.5.9 1.5 2-.672 2-1.5 2zm5 0c-.828 0-1.5-.9-1.5-2s.672-2 1.5-2 1.5.9 1.5 2-.672 2-1.5 2z" />
+													</svg>
+												</a>
+											)}
+
+											{member.socials?.whatsapp && (
+												<a
+													href={member.socials.whatsapp}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="text-gray-400 hover:text-green-500 transition-colors"
+												>
+													{/* WhatsApp */}
+													<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+														<path d="M.057 24l1.687-6.163a11.933 11.933 0 0 1-1.62-6.01C.122 5.373 5.495 0 12.057 0c3.2 0 6.209 1.248 8.477 3.514A11.94 11.94 0 0 1 24 12.01c0 6.627-5.373 12-11.943 12-2.09 0-4.134-.522-5.967-1.507L.057 24zM6.49 20.42c1.676.995 3.276 1.57 5.57 1.57 5.448 0 9.887-4.435 9.887-9.987 0-2.671-1.04-5.182-2.928-7.07A9.88 9.88 0 0 0 12.057 2.12c-5.448 0-9.887 4.435-9.887 9.987 0 2.281.72 3.844 1.916 5.48l-.996 3.64 3.4-.807zM17.285 14.7c-.297-.149-1.757-.867-2.03-.967-.273-.1-.472-.149-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.447-.52.15-.174.2-.298.298-.497.099-.198.05-.373-.025-.522-.075-.149-.67-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.793.372-.273.297-1.04 1.016-1.04 2.479 0 1.463 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.757-.718 2.006-1.41.248-.694.248-1.289.173-1.411-.074-.123-.272-.198-.57-.347z" />
+													</svg>
+												</a>
+											)}
+
+											{member.socials?.telegram && (
+												<a
+													href={member.socials.telegram}
+													target="_blank"
+													rel="noopener noreferrer"
+													className="text-gray-400 hover:text-sky-400 transition-colors"
+												>
+													{/* Telegram */}
+													<svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+														<path d="M9.999 15.2l-.399 5.6c.571 0 .817-.239 1.116-.524l2.68-2.478 5.555 4.103c1.018.562 1.74.267 1.998-.94l3.621-16.943h.001c.321-1.496-.541-2.081-1.524-1.721L1.207 9.508c-1.452.567-1.431 1.384-.247 1.749l5.574 1.74L18.822 6.03c.531-.326 1.014-.146.617.208" />
 													</svg>
 												</a>
 											)}
