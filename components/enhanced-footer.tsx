@@ -12,7 +12,7 @@ export default function EnhancedFooter() {
 
   const socialLinks = [
     { icon: <Twitter className="w-5 h-5" />, name: "Twitter", href: "#" },
-    { icon: <Linkedin className="w-5 h-5" />, name: "LinkedIn", href: "#" },
+    { icon: <Linkedin className="w-5 h-5" />, name: "LinkedIn", href: "https://www.linkedin.com/company/rira-technologies" },
     { icon: <Github className="w-5 h-5" />, name: "GitHub", href: "#" },
   ]
 
@@ -39,9 +39,13 @@ export default function EnhancedFooter() {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <ScrollReveal>
-                <div className="flex items-center space-x-3 mb-6">
-                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                    <Globe className="w-6 h-6 text-white" />
+                <div className="flex items-center space-x-1 mb-6">
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center">
+                    <img
+									src="/eth-logo-b1.png"
+									alt="logo"
+									className="w-full object-cover rounded-lg"
+								/>
                   </div>
                   <span className="text-2xl font-bold text-white">Rira Technologies</span>
                 </div>
