@@ -36,7 +36,7 @@ export default function DynamicHero() {
       <div className="container mx-auto md:max-w-4xl w-full">
         <div className="text-center">
           {/* Main Heading */}
-          <h1 className="text-[40px] md:text-7xl pt-4 font-semibold mb-6 leading-tight text-gray-100">Rira Technologies</h1>
+          <h1 className="text-[38px] md:text-7xl pt-4 font-semibold mb-6 leading-tight text-gray-100">Rira Technologies</h1>
 
           {/* Dynamic Service Text */}
           <div className="mb-8">
