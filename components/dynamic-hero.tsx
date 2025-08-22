@@ -32,7 +32,7 @@ export default function DynamicHero() {
   }, [services.length])
 
   return (
-    <section className="pt-32 pb-14 md:px-4 px-2 relative z-10">
+    <section className="pt-32 pb-14 md:px-4 px-1 relative z-10">
       <div className="container mx-auto md:max-w-4xl w-full">
         <div className="text-center">
           {/* Main Heading */}
@@ -44,7 +44,7 @@ export default function DynamicHero() {
             <div className="h-12 flex items-center justify-center">
               <span
                 key={currentService}
-                className="text-3xl md:text-4xl font-semibold text-blue-600 animate-fade-in-up"
+                className="text-[26px] md:text-4xl font-semibold text-blue-600 animate-fade-in-up"
               >
                 {services[currentService]}
               </span>

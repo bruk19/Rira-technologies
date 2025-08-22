@@ -86,7 +86,7 @@ export default function HomePage() {
                 <img
                   src="/nn-unscreen.gif"
                   alt="Blockchain Network Visualization"
-                  className="w-full md:h-[460px] h-[320px] object-cover rounded-lg md:px-10 px-2 relative md:bottom-8"
+                  className="w-full md:h-[460px] h-[320px] object-cover rounded-lg md:px-10 px-2 relative md:bottom-8 bottom-4"
                 />
               </div>
             </ScrollReveal>

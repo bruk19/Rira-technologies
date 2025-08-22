@@ -748,6 +748,12 @@ video {
 .top-full {
   top: 100%;
 }
+.bottom-3 {
+  bottom: 0.75rem;
+}
+.bottom-4 {
+  bottom: 1rem;
+}
 .z-0 {
   z-index: 0;
 }
@@ -2388,6 +2394,21 @@ video {
 }
 .text-\[43px\] {
   font-size: 43px;
+}
+.text-\[30px\] {
+  font-size: 30px;
+}
+.text-\[25px\] {
+  font-size: 25px;
+}
+.text-\[28px\] {
+  font-size: 28px;
+}
+.text-\[26px\] {
+  font-size: 26px;
+}
+.text-\[39px\] {
+  font-size: 39px;
 }
 .font-black {
   font-weight: 900;
