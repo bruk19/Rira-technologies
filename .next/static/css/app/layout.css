@@ -2909,7 +2909,7 @@ html {
 .testimonials-container::after {
     top: auto;
     bottom: 0;
-    height: 100px;
+    height: 120px;
     background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
 }
 
