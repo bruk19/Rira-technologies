@@ -78,42 +78,44 @@ export default function SlidingExpertise() {
         </ScaleOnScroll>
 
         {/* Sliding Logos Container */}
-        <div className="overflow-hidden md:py-8 py-2">
-          <div ref={containerRef} className="flex md:gap-12 gap-4 items-center whitespace-nowrap">
-            {/* First set of logos */}
-            {services.map((service, index) => (
-              <div
-                key={`first-${index}`}
-                className="flex items-center gap-4 bg-gray-900/50 md:px-8 px-4 py-4 rounded-full border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:scale-105 group flex-shrink-0"
-              >
-                <div
-                  className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}
-                >
-                  {service.icon}
-                </div>
-                <span className="text-white font-semibold text-lg group-hover:text-gray-300 transition-colors">
-                  {service.name}
-                </span>
-              </div>
-            ))}
-            {/* Duplicate set for seamless loop */}
-            {services.map((service, index) => (
-              <div
-                key={`second-${index}`}
-                className="flex items-center gap-4 bg-gray-900/50 px-8 py-4 rounded-full border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:scale-105 group flex-shrink-0"
-              >
-                <div
-                  className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}
-                >
-                  {service.icon}
-                </div>
-                <span className="text-white font-semibold text-lg group-hover:text-gray-300 transition-colors">
-                  {service.name}
-                </span>
-              </div>
-            ))}
+<div className="overflow-hidden md:py-8 py-2">
+  <div className="logo-container overflow-hidden">
+    <div ref={containerRef} className="flex md:gap-12 gap-4 items-center whitespace-nowrap">
+      {/* First set of logos */}
+      {services.map((service, index) => (
+        <div
+          key={`first-${index}`}
+          className="flex items-center gap-4 bg-gray-900/50 md:px-8 px-4 py-4 rounded-full border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:scale-105 group flex-shrink-0"
+        >
+          <div
+            className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}
+          >
+            {service.icon}
           </div>
+          <span className="text-white font-semibold text-lg group-hover:text-gray-300 transition-colors">
+            {service.name}
+          </span>
         </div>
+      ))}
+      {/* Duplicate set for seamless loop */}
+      {services.map((service, index) => (
+        <div
+          key={`second-${index}`}
+          className="flex items-center gap-4 bg-gray-900/50 px-8 py-4 rounded-full border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:scale-105 group flex-shrink-0"
+        >
+          <div
+            className={`w-12 h-12 rounded-lg bg-gradient-to-r ${service.gradient} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}
+          >
+            {service.icon}
+          </div>
+          <span className="text-white font-semibold text-lg group-hover:text-gray-300 transition-colors">
+            {service.name}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
       </div>
     </section>
   )

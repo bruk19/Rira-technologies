@@ -2913,6 +2913,31 @@ html {
     background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
 }
 
+.logo-container {
+    position: relative;
+}
+
+.logo-container::before,
+.logo-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%; 
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    z-index: 1; 
+}
+
+.logo-container::before {
+    left: 0;
+    width: 100px; /* Adjust as needed */
+}
+
+.logo-container::after {
+    right: 0;
+    width: 100px; /* Adjust as needed */
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent);
+}
+
 .file\:border-0::file-selector-button {
   border-width: 0px;
 }
@@ -4357,14 +4382,6 @@ html {
     margin-top: 2rem;
   }
 
-  .md\:mb-1 {
-    margin-bottom: 0.25rem;
-  }
-
-  .md\:mb-2 {
-    margin-bottom: 0.5rem;
-  }
-
   .md\:block {
     display: block;
   }
@@ -5033,4 +5050,5 @@ html {
 [data-slot=popover-content] .\[\[data-slot\=popover-content\]_\&\]\:bg-transparent {
   background-color: transparent;
 }
+
 

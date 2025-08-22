@@ -46,9 +46,9 @@ export default function Testimonials() {
 
         {/* Auto-scrolling columns */}
         <div className="flex-1 flex justify-center gap-6 overflow-hidden bg-black testimonials-container z-0">
-          <TestimonialsColumn testimonials={testimonialsData} duration={15} className="text-white" />
-          <TestimonialsColumn testimonials={testimonialsData} duration={20} className="hidden md:block text-white" />
-          <TestimonialsColumn testimonials={testimonialsData} duration={25} className="hidden lg:block text-white" />
+          <TestimonialsColumn testimonials={testimonialsData} duration={15} className="text-gray-300" />
+          <TestimonialsColumn testimonials={testimonialsData} duration={20} className="hidden md:block text-gray-300" />
+          <TestimonialsColumn testimonials={testimonialsData} duration={25} className="hidden lg:block text-gray-300" />
         </div>
       </div>
     </section>
