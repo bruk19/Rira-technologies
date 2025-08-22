@@ -17,6 +17,7 @@ import MorphingText from "@/components/morphing-text"
 import ScrollTriggeredCounter from "@/components/scroll-triggered-counter"
 import LiquidButton from "@/components/liquid-button"
 import FloatingNavDots from "@/components/floating-nav-dots"
+import Testimonials from "../components/blocks/testimonial"
 
 import type { Metadata } from "next"
 
@@ -260,6 +261,10 @@ export default function HomePage() {
           </ScrollReveal>
         </div>
       </section>
+        {/* Testimonials Section */}
+<section id="testimonials">
+  <Testimonials />
+</section>
 
       {/* CTA Section */}
       <section className="md:py-14 py-4 md:px-4 px-2 relative z-10 bg-black">
