@@ -12,11 +12,15 @@ export default function DynamicHero() {
     "Decentralized Finance",
     "Blockchain Development",
     "Management Systems",
+    "Web3 Solutions",
     "Mobile Applications",
     "Smart Contracts",
+    "Core Banking Solution",
     "Payment Systems",
     "Web Development",
     "NFT Solutions",
+    "ERP Solutions",
+    "Analytics",
   ]
 
   useEffect(() => {
@@ -32,7 +36,7 @@ export default function DynamicHero() {
       <div className="container mx-auto md:max-w-4xl w-full">
         <div className="text-center">
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-7xl pt-4 font-semibold mb-6 leading-tight text-gray-100">Rira Technologies</h1>
+          <h1 className="text-[40px] md:text-7xl pt-4 font-semibold mb-6 leading-tight text-gray-100">Rira Technologies</h1>
 
           {/* Dynamic Service Text */}
           <div className="mb-8">
@@ -40,7 +44,7 @@ export default function DynamicHero() {
             <div className="h-12 flex items-center justify-center">
               <span
                 key={currentService}
-                className="text-2xl md:text-3xl font-semibold text-blue-600 animate-fade-in-up"
+                className="text-3xl md:text-4xl font-semibold text-blue-600 animate-fade-in-up"
               >
                 {services[currentService]}
               </span>

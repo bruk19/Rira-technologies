@@ -1026,6 +1026,12 @@ video {
 .h-svh {
   height: 100svh;
 }
+.h-\[310px\] {
+  height: 310px;
+}
+.h-\[320px\] {
+  height: 320px;
+}
 .max-h-0 {
   max-height: 0px;
 }
@@ -1720,9 +1726,9 @@ video {
 .bg-foreground {
   background-color: hsl(var(--foreground));
 }
-.bg-gray-200 {
+.bg-gray-100 {
   --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity, 1));
 }
 .bg-gray-600 {
   --tw-bg-opacity: 1;
@@ -2236,6 +2242,10 @@ video {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2366,6 +2376,18 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+.text-\[40px\] {
+  font-size: 40px;
+}
+.text-\[50px\] {
+  font-size: 50px;
+}
+.text-\[38px\] {
+  font-size: 38px;
+}
+.text-\[43px\] {
+  font-size: 43px;
 }
 .font-black {
   font-weight: 900;
@@ -2923,7 +2945,7 @@ html {
     position: absolute;
     top: 0;
     height: 100%; 
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.9), transparent);
+    background: linear-gradient(to right, rgba(0, 0, 0, 1), transparent);
     z-index: 1; 
 }
 
@@ -2935,7 +2957,7 @@ html {
 .logo-container::after {
     right: 0;
     width: 100px; /* Adjust as needed */
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent);
+    background: linear-gradient(to left, rgba(0, 0, 0, 1), transparent);
 }
 
 .file\:border-0::file-selector-button {
@@ -4342,6 +4364,14 @@ html {
     position: absolute;
   }
 
+  .md\:bottom-4 {
+    bottom: 1rem;
+  }
+
+  .md\:bottom-8 {
+    bottom: 2rem;
+  }
+
   .md\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -4432,6 +4462,22 @@ html {
 
   .md\:h-full {
     height: 100%;
+  }
+
+  .md\:h-\[400px\] {
+    height: 400px;
+  }
+
+  .md\:h-\[420px\] {
+    height: 420px;
+  }
+
+  .md\:h-\[440px\] {
+    height: 440px;
+  }
+
+  .md\:h-\[460px\] {
+    height: 460px;
   }
 
   .md\:w-12 {
@@ -4586,6 +4632,11 @@ html {
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .md\:pb-14 {
