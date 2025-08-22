@@ -46,7 +46,7 @@ export default function ProductCards() {
 
 				{/* Performance Monitoring Card */}
 				<ScrollReveal delay={0.2}>
-					<Card className="bg-gray-200 text-black rounded-3xl md:mt-0 mt-8">
+					<Card className="bg-gray-100 text-black rounded-3xl md:mt-0 mt-8">
 						<CardContent className="p-8">
 							<BarChart3 className="w-16 h-16 text-blue-700" />
 							<h3 className="md:text-2xl text-xl font-bold mb-4 mt-2">Performance Monitoring & Analytics</h3>
@@ -71,18 +71,18 @@ export default function ProductCards() {
 			<div className="space-y-8">
 				{/* Custom Solutions Card */}
 				<ScrollReveal delay={0.1}>
-					<Card className="bg-gray-200 text-black rounded-3xl">
+					<Card className="bg-gray-950 text-black rounded-3xl border border-gray-600">
 						<CardContent className="p-8">
-							<Blocks className="w-16 h-16 text-blue-700" />
-							<h3 className="md:text-2xl text-xl font-bold mb-4 mt-2">Custom Solutions for Blockchain Projects</h3>
-							<p className="text-gray-600 mb-6 md:text-[16px] text-sm">
+							<Blocks className="w-16 h-16 text-blue-500" />
+							<h3 className="md:text-2xl text-xl font-bold mb-4 mt-2 text-white">Custom Solutions for Blockchain Projects</h3>
+							<p className="text-gray-400 mb-6 md:text-[16px] text-sm">
 								Develop dApps that interact with leading blockchains for efficient management of balances, transactions,
 								tokens, and smart contracts.
 							</p>
 							<Link href="/contact">
 								<Button
 									variant="outline"
-									className="border-blue-600 text-blue-600 text-[16px] hover:bg-blue-50 px-6 py-3 rounded-lg bg-transparent md:mt-6 mt-4"
+									className="border-gray-300 text-gray-200 text-[16px] hover:bg-blue-50 px-6 py-3 rounded-lg bg-transparent md:mt-6 mt-4"
 								>
 									Start Building
 									<ArrowRight className="ml-2 w-4 h-4" />
@@ -108,7 +108,7 @@ export default function ProductCards() {
 							<div className="absolute inset-0"></div>
 							<div className="relative z-10">
 								<h3 className="md:text-3xl text-xl font-bold mb-4 leading-tight">Tailored Solutions for Tokens and NFTs</h3>
-								<p className="text-gray-200 mb-32 md:text-[16px] text-sm">
+								<p className="text-gray-400 mb-32 md:text-[16px] text-sm">
 									Utilize our expertise in creating custom tokens and NFTs on a robust, scalable infrastructure.
 								</p>
 								<div className="md:h-[300px] h-[100px]"></div>

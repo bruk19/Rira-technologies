@@ -61,7 +61,7 @@ export default function HomePage() {
       </section>
 
       {/* Why Blockchain Matters with Photo */}
-      <section className="md:py-10 py-2 px-4 relative z-10">
+      <section className="md:py-8 py-2 px-4 relative z-10">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <ScaleOnScroll>
@@ -86,7 +86,7 @@ export default function HomePage() {
                 <img
                   src="/nn-unscreen.gif"
                   alt="Blockchain Network Visualization"
-                  className="w-full md:h-[480px] h-[300px] object-cover rounded-lg px-2"
+                  className="w-full md:h-[460px] h-[320px] object-cover rounded-lg md:px-10 px-2 relative md:bottom-8"
                 />
               </div>
             </ScrollReveal>
