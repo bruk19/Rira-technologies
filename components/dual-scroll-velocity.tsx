@@ -55,7 +55,7 @@ export default function DualScrollVelocity({ topTexts, bottomTexts, className = 
       <div className="py-4">
         <div ref={topContainerRef} className={`inline-flex gap-8 ${className}`}>
           {topTexts.concat(topTexts).map((text, index) => (
-            <span key={index} className="flex-shrink-0 text-gray-600">
+            <span key={index} className="flex-shrink-0 text-gray-500">
               {text}
             </span>
           ))}
@@ -64,9 +64,9 @@ export default function DualScrollVelocity({ topTexts, bottomTexts, className = 
 
       {/* Bottom Row - Left to Right (Opposite Direction) */}
       <div className="py-4 border-t border-gray-800">
-        <div ref={bottomContainerRef} className={`inline-flex gap-8 ${className}`}>
+        <div ref={bottomContainerRef} className={`inline-flex gap-6 ${className}`}>
           {bottomTexts.concat(bottomTexts).map((text, index) => (
-            <span key={index} className="flex-shrink-0 text-gray-600">
+            <span key={index} className="flex-shrink-0 text-gray-700">
               {text}
             </span>
           ))}

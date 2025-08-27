@@ -18,8 +18,8 @@ const testimonialsData = [
   {
     text: "Their expertise in Web3 is unmatched. Highly recommended!",
     image: "https://randomuser.me/api/portraits/men/2.jpg",
-    name: "Michael Smith",
-    role: "CTO, StartupX",
+    name: "Oliad Berhanu",
+    role: "Founder, Mo-farm",
   },
   {
     text: "We couldn’t have scaled our platform without their brilliant solutions.",
