@@ -91,7 +91,7 @@ export default function PortfolioPage() {
 										<div className="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center">
 											<Shield className="w-6 h-6 text-red-400" />
 										</div>
-										<h3 className="md:text-2xl text-lg font-bold text-white">The Challenge</h3>
+										<h3 className="md:text-2xl text-lg font-bold text-red-500">The Challenge</h3>
 									</div>
 									<p className="text-gray-300 md:text-[16px] text-sm mb-6 leading-relaxed">
 										Ethiopian farmers struggled with accessing financing due to complex manual processes, lack of
@@ -124,7 +124,7 @@ export default function PortfolioPage() {
 										<div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center">
 											<Zap className="w-6 h-6 text-green-400" />
 										</div>
-										<h3 className="text-2xl font-bold text-white">Our Solution</h3>
+										<h3 className="text-2xl font-bold text-emerald-500">Our Solution</h3>
 									</div>
 									<p className="text-gray-300 md:text-[16px] text-sm mb-6 leading-relaxed">
 										We developed a comprehensive digital platform that automates the entire warehouse receipt financing
@@ -278,7 +278,7 @@ export default function PortfolioPage() {
 
 			{/* Client Testimonial */}
 			<section className="md:py-20 py-10 px-4 relative z-10 bg-black">
-				<div className="container mx-auto md:max-w-4xl w-full">
+				<div className="container mx-auto md:max-w-5xl w-full">
 					<ScrollReveal>
 						<Card className="bg-gradient-to-r from-blue-500 to-purple-600 backdrop-blur-sm">
 							<CardContent className="md:p-10 p-3 text-center">
