@@ -42,8 +42,8 @@ export default function PortfolioPage() {
 				<div className="container mx-auto max-w-6xl">
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						{[
-							{ number: "10+", label: "Projects Delivered", icon: "🚀" },
-							{ number: "15+", label: "Happy Clients", icon: "⭐" },
+							{ number: "15+", label: "Projects Delivered", icon: "🚀" },
+							{ number: "10+", label: "Happy Clients", icon: "⭐" },
 							{ number: "3", label: "Industries Served", icon: "🏢" },
 							{ number: "100%", label: "Success Rate", icon: "✅" },
 						].map((stat, index) => (
@@ -223,7 +223,7 @@ export default function PortfolioPage() {
 					</div>
 
 					{/* Impact & Results */}
-					<div className="mb-16">
+					<div className="mb-10">
 						<ScaleOnScroll>
 							<div className="text-center mb-12">
 								<h3 className="md:text-3xl text-xl font-bold mb-6 text-white">Project Impact & Results</h3>
