@@ -10,22 +10,46 @@ const MotionDiv = dynamic(
 
 const testimonialsData = [
   {
-    text: "Rira Technologies transformed our blockchain project with speed and reliability!",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
-    name: "Alice Johnson",
-    role: "Product Manager",
+    text: "Rira Technologies helped us digitize our cooperative records with unmatched efficiency.",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    name: "Abebe Mekonnen",
+    role: "Cooperative Manager",
   },
   {
     text: "Their expertise in Web3 is unmatched. Highly recommended!",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
     name: "Oliad Berhanu",
     role: "Founder, Mo-farm",
   },
   {
-    text: "We couldn’t have scaled our platform without their brilliant solutions.",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
-    name: "Sara Lee",
+    text: "We couldn’t have scaled our blockchain platform without their brilliant solutions.",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    name: "Sara Alemu",
     role: "Founder, ChainWorks",
+  },
+  {
+    text: "Rira Technologies modernized our Web2 business systems, making operations faster and more reliable.",
+    image: "https://randomuser.me/api/portraits/women/7.jpg",
+    name: "Hana Getachew",
+    role: "Operations Director, AddisMart",
+  },
+  {
+    text: "They built us a seamless mobile banking app that our customers love to use daily.",
+    image: "https://randomuser.me/api/portraits/men/1.jpg",
+    name: "Yonas Fikru",
+    role: "CTO, Abyssinia Fintech",
+  },
+  {
+    text: "Thanks to their blockchain expertise, we now provide transparent coffee supply tracking to our international buyers.",
+    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    name: "Tesfaye Bekele",
+    role: "Export Manager, Ethiopian Coffee Union",
+  },
+  {
+    text: "Their team supported our e-commerce platform migration to the cloud with zero downtime. Outstanding work!",
+    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    name: "Lidya Worku",
+    role: "CEO, ShebaShop",
   },
 ];
 
@@ -36,7 +60,7 @@ export default function Testimonials() {
         <MotionDiv
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
+          transition={{ duration: 0.8, delay: 0.4 }}
           viewport={{ once: true }}
           className="text-center mb-8"
         >
