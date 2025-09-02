@@ -47,8 +47,8 @@ export default function SmoothHero() {
           {/* Simple Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-2xl mx-auto">
             {[
-              { number: "50+", label: "Projects" },
-              { number: "25+", label: "Clients" },
+              { number: "10+", label: "Projects" },
+              { number: "15+", label: "Clients" },
               { number: "Web3", label: "Pioneer" },
               { number: "24/7", label: "Support" },
             ].map((stat, index) => (

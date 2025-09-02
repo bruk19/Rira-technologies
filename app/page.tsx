@@ -104,7 +104,7 @@ export default function HomePage() {
           "Reduced Fraud • Immutability • Automated Processes • Resilience • ",
           "Data Ownership • Scalability • Interoperability • Tokenization • ",
         ]}
-        className="text-2xl md:text-4xl font-medium"
+        className="text-2xl md:text-6xl font-medium"
       />
 
       {/* Services We Provide Section */}

@@ -198,7 +198,7 @@ export default function ContactPage() {
 												value={formData.name}
 												onChange={handleChange}
 												className="bg-gray-800 border-gray-600 text-white focus:border-cyan-500"
-												placeholder="John Doe"
+												placeholder="Abreham..."
 												required
 											/>
 										</div>
@@ -210,7 +210,7 @@ export default function ContactPage() {
 												value={formData.email}
 												onChange={handleChange}
 												className="bg-gray-800 border-gray-600 text-white focus:border-cyan-500"
-												placeholder="john@example.com"
+												placeholder="abreham@example.com..."
 												required
 											/>
 										</div>
@@ -225,7 +225,7 @@ export default function ContactPage() {
 												value={formData.phone}
 												onChange={handleChange}
 												className="bg-gray-800 border-gray-600 text-white focus:border-cyan-500"
-												placeholder="+251 912 020 845"
+												placeholder="+251 912 020...."
 											/>
 										</div>
 										<div>
@@ -235,7 +235,7 @@ export default function ContactPage() {
 												value={formData.company}
 												onChange={handleChange}
 												className="bg-gray-800 border-gray-600 text-white focus:border-cyan-500"
-												placeholder="Your Company"
+												placeholder="Your Company...."
 											/>
 										</div>
 									</div>
@@ -286,7 +286,7 @@ export default function ContactPage() {
 								{contactInfo.map((info, index) => (
 									<Card
 										key={index}
-										className="bg-gray-900/50 border-gray-700 hover:border-cyan-500 transition-all duration-300 group"
+										className="bg-gray-900/50 border-gray-700 hover:gray-100 transition-all duration-300 group"
 									>
 										<CardContent className="md:p-6 p-3">
 											<div className="flex items-start space-x-4">
@@ -298,7 +298,7 @@ export default function ContactPage() {
 														{info.title}
 													</h3>
 													<p className="text-cyan-400 font-semibold mb-1 md:text-16 text-sm">{info.details}</p>
-													<p className="text-gray-400 text-sm">{info.description}</p>
+													<p className="text-gray-400 text-sm group-hover:text-white">{info.description}</p>
 												</div>
 											</div>
 										</CardContent>

@@ -56,7 +56,7 @@ export default function ProductCards() {
 							<Link href="/contact">
 								<Button
 									variant="outline"
-									className="border-blue-600 text-blue-600 text-[16px] hover:bg-blue-50 px-6 py-3 rounded-lg bg-transparent md:mt-8 mt-4"
+									className="border-blue-600 text-blue-600 text-[16px] hover:bg-blue-50 hover:border-black px-6 py-3 rounded-lg bg-transparent md:mt-8 mt-4"
 								>
 									Start Monitoring
 									<ArrowRight className="ml-2 w-4 h-4" />
