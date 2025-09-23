@@ -77,7 +77,7 @@ export default function SlidingExpertise() {
           </div>
         </ScaleOnScroll>
 
-        {/* Sliding Logos Container */}
+  {/* Sliding Logos Container */}
 <div className="overflow-hidden md:py-8 py-2">
   <div className="logo-container overflow-hidden">
     <div ref={containerRef} className="flex md:gap-12 gap-4 items-center whitespace-nowrap">
