@@ -65,7 +65,7 @@ export default function DynamicHero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
             <Link href="/contact">
-              <Button className="bg-gray-700 hover:bg-gray-600 text-white px-8 py-3 text-lg rounded-lg transition-colors duration-300">
+              <Button className="bg-gray-700 hover:bg-gray-600 text-gray-200 hover:text-white px-8 py-3 text-lg rounded-lg transition-colors duration-300">
                 Start Your Project
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
