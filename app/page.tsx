@@ -238,7 +238,7 @@ export default function HomePage() {
               { number: 10, label: "Diverse Blockchain Solutions", icon: "🔗", suffix: "+" },
               { number: 99.9, label: "Service Availability", icon: "⚡", suffix: "%" },
               { number: 24, label: "Support Service", icon: "🛠️", suffix: "/7" },
-              { number: 50, label: "Projects Completed", icon: "✅", suffix: "+" },
+              { number: 15, label: "Projects Completed", icon: "✅", suffix: "+" },
             ].map((stat, index) => (
               <ScrollReveal key={index} delay={index * 0.1}>
                 <Card className="bg-gray-800 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:scale-105">

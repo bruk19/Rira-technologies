@@ -38,11 +38,11 @@ export default function LiquidButton({ children, href, onClick, className = "" }
 
   return (
     <Button
-      className={`relative overflow-hidden bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 group ${className}`}
+      className={`relative overflow-hidden bg-gradient-to-r from-gray-400 to-gray-900 hover:from-white hover:to-gray-black text-white px-8 py-4 text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 group ${className}`}
       onClick={handleClick}
     >
       {/* Liquid background effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-gray-900 to-gray-200 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
       {/* Ripple effects */}
       {ripples.map((ripple) => (
