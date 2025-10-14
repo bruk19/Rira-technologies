@@ -22,6 +22,7 @@ import ScrollReveal from "@/components/scroll-reveal"
 import ScaleOnScroll from "@/components/scale-on-scroll"
 import EnhancedFooter from "@/components/enhanced-footer"
 import type { Metadata } from "next"
+import LiquidButton from "@/components/liquid-button"
 
 export const metadata: Metadata = {
   title: "About Us - Rira Technologies",
@@ -67,10 +68,7 @@ export default function AboutPage() {
 									the next evolution in creating transparent, secure, and accessible digital solutions.
 								</p>
 								<Link href="/contact">
-									<Button className="bg-gray-700 hover:bg-gray-600 text-white px-6 py-3 rounded-lg transition-colors duration-300">
-										Join Our Journey
-										<ArrowRight className="ml-2 w-4 h-4" />
-									</Button>
+									<LiquidButton>Join Our Journey</LiquidButton>
 								</Link>
 							</div>
 						</ScaleOnScroll>
@@ -218,7 +216,7 @@ export default function AboutPage() {
 							{
 								icon: <TrendingUp className="w-8 h-8" />,
 								title: "Proven Track Record",
-								description: "Successfully delivered 50+ projects with measurable impact across various industries.",
+								description: "Successfully delivered 15+ projects with measurable impact across various industries.",
 							},
 							{
 								icon: <Zap className="w-8 h-8" />,
@@ -282,7 +280,7 @@ export default function AboutPage() {
 							{
 								year: "2025",
 								title: "Market Leadership",
-								description: "Became Ethiopia's leading Web3 agency with 10+ successful projects",
+								description: "Became Ethiopia's leading Web3 agency with 15+ successful projects",
 								icon: <Award className="w-6 h-6" />,
 								gradient: "from-purple-500 to-pink-500",
 							},
@@ -338,8 +336,8 @@ export default function AboutPage() {
 
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						{[
-							{ number: "10+", label: "Projects Delivered", icon: "🚀" },
-							{ number: "100+", label: "Farmers Empowered", icon: "🌾" },
+							{ number: "15+", label: "Projects Delivered", icon: "🚀" },
+							{ number: "1000+", label: "Farmers Empowered", icon: "🌾" },
 							{ number: "6B+ ETB", label: "Financing Unlocked", icon: "💰" },
 							{ number: "85%", label: "Dispute Reduction", icon: "📊" },
 						].map((stat, index) => (
@@ -523,10 +521,7 @@ export default function AboutPage() {
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4 justify-center">
 								<Link href="/contact">
-									<Button className="bg-gradient-to-r from-purple-500 to-cyan-600 hover:from-purple-600 hover:to-cyan-700 text-white px-8 py-3 md:text-lg text-[15px] rounded-lg transition-all duration-300 hover:scale-105">
-										Start Your Project
-										<ArrowRight className="ml-2 w-5 h-5" />
-									</Button>
+									<LiquidButton>Start Your Project</LiquidButton>
 								</Link>
 								<Link href="/portfolio">
 									<Button

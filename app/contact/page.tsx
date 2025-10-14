@@ -255,7 +255,7 @@ export default function ContactPage() {
 									<Button
 										type="submit"
 										disabled={status === "loading"}
-										className="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white py-3 md:text-lg text-[16px] font-semibold rounded-full transition-all duration-300 hover:scale-105"
+										className="w-full bg-gradient-to-r from-cyan-500 to-gray-700 hover:from-cyan-600 hover:to-gray-800 text-white py-3 md:text-lg text-[16px] font-semibold rounded-full transition-all duration-300 hover:scale-105"
 									>
 										{status === "loading" ? "Sending..." : "Send Message"}
 										<Send className="ml-2 w-5 h-5" />
@@ -290,7 +290,7 @@ export default function ContactPage() {
 									>
 										<CardContent className="md:p-6 p-3">
 											<div className="flex items-start space-x-4">
-												<div className="md:w-12 md:h-12 w-10 h-10 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
+												<div className="md:w-12 md:h-12 w-10 h-10 bg-gradient-to-r from-gray-500 to-gray-900 rounded-lg flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
 													{info.icon}
 												</div>
 												<div>
@@ -314,7 +314,7 @@ export default function ContactPage() {
 										<a
 											key={index}
 											href={social.href}
-											className="w-12 h-12 bg-gray-800 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-purple-600 rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
+											className="w-12 h-12 bg-gray-800 hover:bg-gradient-to-r hover:from-gray-800 hover:to-gray-400 rounded-lg flex items-center justify-center text-gray-400 hover:text-white transition-all duration-300 hover:scale-110"
 										>
 											{social.icon}
 										</a>
