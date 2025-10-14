@@ -7,6 +7,7 @@ import CleanBackground from "@/components/clean-background"
 import ScrollReveal from "@/components/scroll-reveal"
 import ScaleOnScroll from "@/components/scale-on-scroll"
 import EnhancedFooter from "@/components/enhanced-footer"
+import LiquidButton from "@/components/liquid-button"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
@@ -374,10 +375,7 @@ export default function PortfolioPage() {
 							</p>
 							<div className="flex flex-col sm:flex-row gap-4 justify-center">
 								<Link href="/contact">
-									<Button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 md:text-lg text-[15px] rounded-lg transition-all duration-300 hover:scale-105">
-										Start Your Project
-										<ArrowRight className="ml-2 w-5 h-5" />
-									</Button>
+									<LiquidButton>Start Your Project</LiquidButton>
 								</Link>
 								<Link href="/about">
 									<Button
