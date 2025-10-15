@@ -209,9 +209,9 @@ export default function PortfolioPage() {
 						<ScrollReveal delay={0.2}>
 							<div className="bg-gray-900/50 rounded-lg p-2 border border-gray-800">
 								<img
-									src="/eth-farm.png"
+									src="/eth-desktp.png"
 									alt="ETH-Farm Dashboard Interface"
-									className="w-full h-80 object-cover rounded-lg mb-6"
+									className="w-full h-full object-cover rounded-lg mb-6"
 								/>
 								<h4 className="text-xl font-bold text-white  md:mb-4 mb-2 px-4">System Dashboard</h4>
 								<p className="text-gray-400 md:text-[16px] text-sm leading-relaxed px-4">
@@ -278,19 +278,19 @@ export default function PortfolioPage() {
 			</section>
 
 			{/* Client Testimonial */}
-			<section className="md:py-20 py-10 px-4 relative z-10 bg-black">
+			<section className="md:py-14 py-10 md:px-4 px-2 relative z-10 bg-black">
 				<div className="container mx-auto md:max-w-5xl w-full">
 					<ScrollReveal>
-						<Card className="bg-gradient-to-r from-blue-500 to-purple-600 backdrop-blur-sm">
+						<Card className="bg-gradient-to-r from-gray-900 to-gray-500 backdrop-blur-sm border-gray-500">
 							<CardContent className="md:p-10 p-3 text-center">
-								<div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
-									<Users className="w-8 h-8 text-white" />
+								<div className="md:w-16 md:h-16 w-14 h-14 bg-gradient-to-r from-gray-500 to-gray-100 rounded-full flex items-center justify-center mx-auto mb-6">
+									<Users className="w-8 h-8 text-blue-700" />
 								</div>
-								<blockquote className="md:text-xl text-[15px] text-white mb-8 leading-relaxed italic">
+								<blockquote className="md:text-[17px] text-[14px] text-white mb-8 leading-relaxed italic">
 									"ETH-Farm has transformed Ethiopia’s agricultural ecosystem. For farmers, access to financing and resources that once took weeks — burdened by paperwork, travel, and delays — now happens in just days, with complete transparency. This innovation has opened doors for thousands of farmers to receive timely support, fair pricing, and direct connections to markets. Beyond speeding up processes, ETH-Farm empowers rural communities, increases productivity, and ensures that the benefits of agriculture are felt across the nation."
 								</blockquote>
 								<div className="text-center">
-									<div className="text-lg font-bold text-white">Ministry of Trade and Regional Integration - MOTRI</div>
+									<div className="md:text-lg text-[16px] font-bold text-white">Ministry of Trade and Regional Integration - MOTRI</div>
 									<div className="md:text-[16px] text-sm text-blue-300 font-semibold">Federal Democratic Republic of Ethiopia</div>
 								</div>
 							</CardContent>
