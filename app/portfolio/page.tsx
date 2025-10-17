@@ -207,11 +207,11 @@ export default function PortfolioPage() {
 						</ScrollReveal>
 
 						<ScrollReveal delay={0.2}>
-							<div className="bg-gray-900/50 rounded-lg p-2 border border-gray-800">
+							<div className="bg-gray-900/50 rounded-lg p-2 border border-gray-900">
 								<img
-									src="/eth-desktp.png"
+									src="/eth-r.png"
 									alt="ETH-Farm Dashboard Interface"
-									className="w-full h-full object-cover rounded-lg mb-6"
+									className="w-full h-full object-cover rounded-lg mb-6 bg-gray-900"
 								/>
 								<h4 className="text-xl font-bold text-white  md:mb-4 mb-2 px-4">System Dashboard</h4>
 								<p className="text-gray-400 md:text-[16px] text-sm leading-relaxed px-4">
