@@ -6,7 +6,7 @@ export default function EnhancedFooter() {
   const quickLinks = [
     { href: "/", label: "Home" },
     { href: "/portfolio", label: "Portfolio" },
-    { href: "/development", label: "Services" },
+    { href: "/about", label: "about" },
     { href: "/contact", label: "Contact" },
   ]
 
