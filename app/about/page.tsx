@@ -333,14 +333,18 @@ export default function AboutPage() {
 							</p>
 						</div>
 					</ScaleOnScroll>
-
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						{[
-							{ number: "15+", label: "Projects Delivered", icon: "🚀" },
-							{ number: "1000+", label: "Farmers Empowered", icon: "🌾" },
-							{ number: "6B+ ETB", label: "Financing Unlocked", icon: "💰" },
-							{ number: "85%", label: "Dispute Reduction", icon: "📊" },
-						].map((stat, index) => (
+  { number: "15+", label: "Projects Delivered", icon: "🚀" },
+
+  // Changed from farmers → tech empowerment
+  { number: "1000+", label: "Users Empowered", icon: "🛰️" }, // or "💻", "🤖", "🛰️"
+
+  // Changed financing → crypto amount
+  { number: "12M+ USDT", label: "Crypto Value Secured", icon: "🪙" }, // or "💎", "🔗", "📡"
+
+  { number: "85%", label: "Dispute Reduction", icon: "📊" },
+].map((stat, index) => (
 							<ScrollReveal key={index} delay={index * 0.1}>
 								<Card className="bg-gray-900/50 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:scale-105">
 									<CardContent className="md:p-6 p-4 text-center">
