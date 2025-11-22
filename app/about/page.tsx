@@ -336,13 +336,10 @@ export default function AboutPage() {
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						{[
   { number: "15+", label: "Projects Delivered", icon: "🚀" },
-
   // Changed from farmers → tech empowerment
   { number: "1000+", label: "Users Empowered", icon: "🛰️" }, // or "💻", "🤖", "🛰️"
-
   // Changed financing → crypto amount
   { number: "12M+ USDT", label: "Crypto Value Secured", icon: "🪙" }, // or "💎", "🔗", "📡"
-
   { number: "85%", label: "Dispute Reduction", icon: "📊" },
 ].map((stat, index) => (
 							<ScrollReveal key={index} delay={index * 0.1}>

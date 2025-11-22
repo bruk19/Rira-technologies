@@ -132,13 +132,13 @@ export default function EnhancedFooter() {
                   © 2025 Rira Technologies. All rights reserved. 
                 </p>
                 <div className="flex md:space-x-10 space-x-[18px]">
-                  <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
+                  <Link href="/privacy-policy" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
                     Privacy Policy
                   </Link>
-                  <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
+                  <Link href="/terms-of-service" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
                     Terms of Service
                   </Link>
-                  <Link href="#" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
+                  <Link href="/cookie-policy" className="text-gray-400 hover:text-white text-sm transition-colors duration-300">
                     Cookie Policy
                   </Link>
                 </div>
