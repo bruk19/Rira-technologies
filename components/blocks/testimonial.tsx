@@ -35,13 +35,13 @@ const testimonialsData = [
   },
   {
     text: "They built us a seamless mobile banking app that our customers love to use daily.",
-    image: "/Gas",
+    image: "/Gas.jpeg",
     name: "Yonas Fikru",
     role: "Senior Software Engineer, Wissenschaft Inc",
   },
   {
     text: "Thanks to their blockchain expertise, we now provide transparent coffee supply tracking to our international buyers.",
-    image: "/Kibr.jpeg",
+    image: "/Kibr.png",
     name: "Tesfaye Bekele",
     role: "Export Manager, Ethiopian Coffee Union",
   },
