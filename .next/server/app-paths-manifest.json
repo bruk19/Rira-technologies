@@ -1,8 +1,7 @@
 {
-  "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/page": "app/page.js",
-  "/portfolio/page": "app/portfolio/page.js",
   "/about/page": "app/about/page.js",
-  "/privacy-policy/page": "app/privacy-policy/page.js"
+  "/privacy-policy/page": "app/privacy-policy/page.js",
+  "/terms-of-service/page": "app/terms-of-service/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
+  "/page": "app/page.js"
 }
