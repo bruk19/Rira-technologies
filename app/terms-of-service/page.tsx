@@ -285,7 +285,7 @@ export default function TermsOfServicePage() {
             </p>
             <div className="bg-gray-900 border border-gray-800 rounded-lg p-6">
               <p className="text-gray-300 mb-2">
-                <strong>Email:</strong> hello@riratechnologies.com
+                <strong>Email:</strong> hello@rira-technologies.com
               </p>
               <p className="text-gray-300 mb-2">
                 <strong>Phone:</strong> +251 913 020 845 | +251 943 413 849
