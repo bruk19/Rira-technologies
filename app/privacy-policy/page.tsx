@@ -348,7 +348,7 @@ export default function PrivacyPolicyPage() {
               <Link href="/privacy-policy" className="text-gray-400 hover:text-blue-400 transition-colors text-sm">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-gray-400 hover:text-blue-400 transition-colors text-sm">
+              <Link href="/terms-of-service" className="text-gray-400 hover:text-blue-400 transition-colors text-sm">
                 Terms of Service
               </Link>
               <Link href="/contact" className="text-gray-400 hover:text-blue-400 transition-colors text-sm">
