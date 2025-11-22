@@ -96,7 +96,7 @@ export default function EnhancedFooter() {
                       <Mail className="w-4 h-4 text-gray-400 group-hover:text-white transition-colors duration-300" />
                     </div>
                     <span className="text-gray-400 group-hover:text-gray-300 transition-colors">
-                      hello@riratechnologies.com
+                      hello@rira-technologies.com
                     </span>
                   </li>
                   <li className="flex items-center space-x-2 group">

@@ -96,7 +96,7 @@ export default function ContactPage() {
 		{
 			icon: <Mail className="w-6 h-6" />,
 			title: "Email Us",
-			details: "hello@riratechnologies.com",
+			details: "hello@rira-technologies.com",
 			description: "Send us an email anytime",
 		},
 		{
