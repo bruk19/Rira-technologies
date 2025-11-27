@@ -28,6 +28,21 @@ html {
   --font-mono: ${GeistMono.variable};
 }
         `}</style>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Rira Technologies",
+              url: "https://rira-technologies.com",
+              logo: "https://rira-technologies.com/logo.png",
+              sameAs: [
+                "https://www.linkedin.com/company/rira-technologies",
+              ]
+            }),
+          }}
+        />
       </head>
       <body>{children}</body>
     </html>
