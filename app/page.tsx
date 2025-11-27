@@ -23,7 +23,7 @@ import type { Metadata } from "next"
 
 export const metadata: Metadata = {
   title: "Home - Rira Technologies",
-  description: "Rira Technologies is a premier Web3 agency in Ethiopia, specializing in innovative blockchain solutions that bridge Web2 and Web3. Explore our services, products, and commitment to transforming digital landscapes.",
+  description: "Rira Technologies is a premier Web3 agency, specializing in innovative blockchain solutions that bridge Web2 and Web3. Explore our services, products, and commitment to transforming digital landscapes.",
 }
 
 export default function HomePage() {
