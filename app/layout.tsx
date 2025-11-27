@@ -39,7 +39,6 @@ html {
               logo: "https://rira-technologies.com/logo.png",
               sameAs: [
                 "https://www.linkedin.com/company/rira-technologies",
-                "https://x.com/rira_tech"
               ]
             }),
           }}
