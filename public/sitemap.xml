@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://https://rira-technologies.com";
+  const baseUrl = "https://rira-technologies.com"; 
 
   return [
     {
@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       priority: 1.0,
     },
-{
+    {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
       priority: 0.8,
