@@ -56,29 +56,26 @@ html {
   --font-mono: ${GeistMono.variable};
 }
         `}</style>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify([
-              {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                name: "Rira Technologies",
-                url: "https://www.rira-technologies.com",
-                logo: "https://www.rira-technologies.com/logo-square.png",
-                sameAs: [
-                  "https://www.linkedin.com/company/rira-technologies",
-                ],
-              },
-              {
-                "@context": "https://schema.org",
-                "@type": "WebSite",
-                name: "Rira Technologies",
-                url: "https://www.rira-technologies.com",
-              },
-            ]),
-          }}
-        />
+       <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "Rira Technologies",
+      url: "https://www.rira-technologies.com",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://www.rira-technologies.com/logo-square.png",
+        width: 512,
+        height: 512
+      },
+      sameAs: [
+        "https://www.linkedin.com/company/rira-technologies"
+      ]
+    }),
+  }}
+/>
       </head>
       <body>
         {/* SEO-friendly hidden H1 for Google */}
