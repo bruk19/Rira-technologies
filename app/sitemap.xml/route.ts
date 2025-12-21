@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-const baseUrl = "https://rira-technologies.com";
+const baseUrl = "https://www.rira-technologies.com";
 
 export async function GET() {
   const urls = [
