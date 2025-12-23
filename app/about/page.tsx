@@ -25,8 +25,8 @@ import type { Metadata } from "next"
 import LiquidButton from "@/components/liquid-button"
 
 export const metadata: Metadata = {
-  title: "About Us - Rira Technologies",
-  description: "Learn more about Rira Technologies, Ethiopia's pioneering Web3 agency.",
+	title: "About Us - Rira Technologies",
+	description: "Learn more about Rira Technologies, Ethiopia's pioneering Web3 agency.",
 }
 
 export default function AboutPage() {
@@ -335,13 +335,13 @@ export default function AboutPage() {
 					</ScaleOnScroll>
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						{[
-  { number: "15+", label: "Projects Delivered", icon: "🚀" },
-  // Changed from farmers → tech empowerment
-  { number: "1000+", label: "Users Empowered", icon: "🛰️" }, // or "💻", "🤖", "🛰️"
-  // Changed financing → crypto amount
-  { number: "12M+ USDT", label: "Crypto Value Secured", icon: "🪙" }, // or "💎", "🔗", "📡"
-  { number: "85%", label: "Dispute Reduction", icon: "📊" },
-].map((stat, index) => (
+							{ number: "15+", label: "Projects Delivered", icon: "🚀" },
+							// Changed from farmers → tech empowerment
+							{ number: "1000+", label: "Users Empowered", icon: "🛰️" }, // or "💻", "🤖", "🛰️"
+							// Changed financing → crypto amount
+							{ number: "12M+ USDT", label: "Crypto Value Secured", icon: "🪙" }, // or "💎", "🔗", "📡"
+							{ number: "85%", label: "Dispute Reduction", icon: "📊" },
+						].map((stat, index) => (
 							<ScrollReveal key={index} delay={index * 0.1}>
 								<Card className="bg-gray-900/50 border-gray-800 hover:border-gray-700 transition-all duration-300 hover:scale-105">
 									<CardContent className="md:p-6 p-4 text-center">
@@ -414,6 +414,16 @@ export default function AboutPage() {
 								image: "/bereket.png",
 								socials: {
 									linkedin: "https://linkedin.com/in/bereket-belete",
+								},
+							},
+							{
+								name: "Surafel Samson",
+								role: "Fullstack Developer & COO",
+								description:
+									"Fullstack Developer with extensive experience in building scalable, high-performance web applications.",
+								image: "/surafels.png",
+								socials: {
+									linkedin: "https://linkedin.com/in/surafel-samson",
 								},
 							},
 						].map((member, index) => (
