@@ -14,6 +14,7 @@ import {
 	Code,
 	Rocket,
 	Star,
+	MapPin,
 } from "lucide-react"
 import Link from "next/link"
 import Navigation from "@/components/navigation"
@@ -336,10 +337,8 @@ export default function AboutPage() {
 					<div className="grid grid-cols-2 md:grid-cols-4 gap-8">
 						{[
 							{ number: "15+", label: "Projects Delivered", icon: "🚀" },
-							// Changed from farmers → tech empowerment
-							{ number: "1000+", label: "Users Empowered", icon: "🛰️" }, // or "💻", "🤖", "🛰️"
-							// Changed financing → crypto amount
-							{ number: "12M+ USDT", label: "Crypto Value Secured", icon: "🪙" }, // or "💎", "🔗", "📡"
+							{ number: "1000+", label: "Users Empowered", icon: "🛰️" },
+							{ number: "12M+ USDT", label: "Crypto Value Secured", icon: "🪙" },
 							{ number: "85%", label: "Dispute Reduction", icon: "📊" },
 						].map((stat, index) => (
 							<ScrollReveal key={index} delay={index * 0.1}>
@@ -373,6 +372,7 @@ export default function AboutPage() {
 							{
 								name: "Addis Belete",
 								role: "Co-founder & CEO",
+								location: "Berlin, Germany",
 								description:
 									"Web3 Software Engineer with extensive expertise in decentralized finance.",
 								image: "/add.png",
@@ -386,6 +386,7 @@ export default function AboutPage() {
 							{
 								name: "Bruk Teshome",
 								role: "Co-founder & CTO",
+								location: "Addis Ababa, Ethiopia",
 								description:
 									"Web3 Software Engineer with extensive expertise in decentralized finance and SEO.",
 								image: "/bruk.png",
@@ -399,6 +400,7 @@ export default function AboutPage() {
 							{
 								name: "Dr. Mesay Bejiga",
 								role: "Senior AI Scientist",
+								location: "Nashville, United States",
 								description:
 									"Senior Machine Learning and Artificial Intelligence Scientist with over 15 years of experience.",
 								image: "/mesay.png",
@@ -409,6 +411,7 @@ export default function AboutPage() {
 							{
 								name: "Bereket Bejiga",
 								role: "Lead Software Engineer",
+								location: "Nashville, United States",
 								description:
 									"Lead Software Engineer with over a decade of professional experience.",
 								image: "/bereket.png",
@@ -419,6 +422,7 @@ export default function AboutPage() {
 							{
 								name: "Surafel Samson",
 								role: "Fullstack Developer & COO",
+								location: "Addis Ababa, Ethiopia",
 								description:
 									"Fullstack Developer with extensive experience in building scalable, high-performance web applications.",
 								image: "/surafels.png",
@@ -443,7 +447,14 @@ export default function AboutPage() {
 										<h3 className="md:text-2xl text-xl font-bold text-white mb-2">
 											{member.name}
 										</h3>
-										<p className="text-blue-400 font-semibold mb-4">{member.role}</p>
+										<p className="text-blue-400 font-semibold mb-2">{member.role}</p>
+
+										{/* Location */}
+										<div className="flex items-center justify-center gap-1 mb-4">
+											<MapPin className="w-3.5 h-3.5 text-gray-500" />
+											<span className="text-xs text-gray-500">{member.location}</span>
+										</div>
+
 										<p className="text-gray-400 leading-relaxed md:text-[16px] text-sm">
 											{member.description}
 										</p>
