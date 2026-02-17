@@ -451,8 +451,8 @@ export default function AboutPage() {
 
 										{/* Location */}
 										<div className="flex items-center justify-center gap-1 mb-4">
-											<MapPin className="w-3.5 h-3.5 text-gray-600" />
-											<span className="text-xs text-gray-600">{member.location}</span>
+											<MapPin className="w-3.5 h-3.5 text-gray-500" />
+											<span className="text-xs text-gray-500">{member.location}</span>
 										</div>
 
 										<p className="text-gray-400 leading-relaxed md:text-[16px] text-sm">
